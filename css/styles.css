@@ -17,8 +17,10 @@ body{
                         "header"
                         "main"
                         "footer" ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 75% 10% ;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 75% 10%;
+    
+
 }
 
 header{
@@ -27,11 +29,13 @@ header{
     grid-template-areas: "logo nav";
     grid-template-columns: 40% 60%;
     background-color: rgb(230, 230, 230);
+    
 
 }
 
 main{
     grid-area: main;
+
 }
 
 footer{
@@ -43,6 +47,7 @@ footer{
                         "cred cred";
     grid-template-columns:70% 30%;
     grid-template-rows: 85% 15%;
+
 }
 
 /*ESTILOS HEADER*/
@@ -115,7 +120,7 @@ footer{
 
             /*Estilos de logo en footer*/
             .logoContainer__image{
-                width: 8rem;
+                width: 5.5rem;
                 padding: 1%;       
                 }
 
@@ -126,7 +131,7 @@ footer{
             justify-self: flex-start;
             }
                 .bottomButtons__icon{
-                    width: 2.5rem;
+                    width: 2rem;
                     height: auto;
                     margin: 2%;
                 }
@@ -183,13 +188,14 @@ footer{
     display: grid;
     height: 100%;
     grid-template-areas: 
-                        "para ."  
+                        "para ."
                         ;
     grid-template-columns: 50% 50%;
     background-image: url(../img/index__background.png);
     background-repeat: no-repeat;  
     background-position: top center;
     height: 70rem;
+    
     }
         /*Estilos de BLOQUE que contiene parrafo en seccion principal*/
         .indexContent__article{
@@ -454,6 +460,7 @@ footer{
     html{
         font-size: 75% ;
     }
+
     .header__hamb{
         grid-area: nav;
         width: 100%;
@@ -471,7 +478,7 @@ footer{
         grid-area: none;
         display: none;
     }
-
+    
     .indexContent{
         display: flex;
         flex-direction: row;
@@ -480,9 +487,9 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;  
         background-position: top center;
-        height: 50rem;
+        height: 60rem;
         }
-        
+
     /*ESTILOS FOOTER*/
 
 .footer__content{
@@ -492,7 +499,7 @@ footer{
     grid-template-areas: "left center right"
                         "cred cred cred";
     grid-template-columns: 50% 20% 30%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 90% 10%;
 }
 
 .footer__img{
@@ -508,16 +515,15 @@ footer{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-
                     }
                         /*Estilos elementos de lista en info de contacto*/
                         .list__elementFooter{
                             font-family: 'Nunito Sans';
                             list-style-type: none;
                             color: white;
-                            font-size: 1.1rem;
+                            font-size: 0.9rem;
                             font-weight: bold;
-                            text-align: justify;
+                            text-align: center;
                         }
     ;
 }
