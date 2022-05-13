@@ -421,8 +421,9 @@ footer{
         grid-area: nav;
         width: 100%;
         display:flex;
-        justify-content: flex-end;
-        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-end;
     }
 
     .menu__icon{
