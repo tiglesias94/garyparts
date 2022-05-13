@@ -60,6 +60,7 @@ footer{
             background-color: rgb(65, 3, 145);
             
         }
+
             /*Estilos Logotipo*/
                 .logo__img{
                 height: 3.5rem;
@@ -467,7 +468,23 @@ footer{
         grid-area: header;  
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
         background-color: rgb(230, 230, 230);}
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            grid-area: logo;
+            background-color: rgb(65, 3, 145);     
+        }
+
+            /*Estilos Logotipo*/
+                .logo__img{
+                height: 3rem;
+                background-color: green;
+                }
 
     .header__hamb{
         grid-area: nav;
