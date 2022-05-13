@@ -57,7 +57,7 @@ footer{
             height: 100%;
             grid-area: logo;
             align-self: center;
-
+            background-color: rgb(65, 3, 145);
             
         }
             /*Estilos Logotipo*/
@@ -424,6 +424,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-content: flex-end;
+
     }
 
     .menu__icon{
@@ -462,12 +463,16 @@ footer{
         font-size: 75% ;
     }
 
+    header{
+        grid-area: header;  
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(230, 230, 230);}
+
     .header__hamb{
         grid-area: nav;
         width: 100%;
-        display:flex;
-        justify-content: flex-end;
-        align-content: center;
+        background-color: yellow;
     }
 
     .menu__icon{
@@ -476,7 +481,6 @@ footer{
     }
 
     .navBar{ 
-        grid-area: none;
         display: none;
     }
     
