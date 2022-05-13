@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+        <!-- Tipografia-->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <header>
+
+
+        <!--Logo con enlace a home-->
+        <div class="logo">
+            <a href="../index.html">
+            <img class="logo__img" src="../img/logo.png" alt="">
+            </a>
+        </div>
+    
+        <!--Barra de navegacion a otros html-->
+        <nav class="navBar">
+            <ul class="navBar__list">
+    
+                <li class="list__element">
+                    <a class="enlaces" href="../index.html">
+                        HOME</a>
+                </li >
+    
+                <li class="list__element">
+                    <a class="enlaces" href="tienda.html">
+                        TIENDA</a>
+                </li >
+    
+                <li class="list__element">
+                    <a class="enlaces" href="desarrollos.html">
+                    DESARROLLOS</a>
+                </li>
+    
+                <li class="list__element">
+                    <a class="enlaces" href="clientes.html">
+                    CLIENTES</a>
+                </li>
+    
+                <li class="list__element" >
+                    <a class="enlaces" href="contacto.html">
+                    CONTACTO</a>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
+<main>
+
+ <!--Formulario para registro-->
+ <div>
+    <form>
+        <fieldset class="form__fieldset">
+            <legend class="fieldset__title">Contacto</legend>
+            <!--Ingreso de nombre-->
+            <div>
+                <label for="nombre" class="fieldset__label">
+                    Nombre
+                </label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="fieldset__placeholder">
+            </div>
+            <div>
+                <label for="ciudad" class="fieldset__label">
+                    Ciudad
+                </label>
+                <input type="text" name="ciudad" placeholder="Ingrese Ciudad" class="fieldset__placeholder">
+            </div>
+            <div>
+                <label for="provincia" class="fieldset__label">
+                    Provincia
+                </label>
+                <input type="text" name="provincia" placeholder="Ingrese Provincia" class="fieldset__placeholder">
+            </div>
+            <div>
+                  <label for="auto" class="fieldset__label">
+                    Vehiculo
+                </label>
+                     <select name="auto" id="">
+                        <option value="">Honda Civic</option>
+                        <option value="">Honda Accord</option>
+                        <option value="">Otro</option>                
+                     </select>
+            </div>
+            <div>
+                <label for="otro" class="fieldset__label">
+                    Otro
+                </label>
+                <input type="text" name="otro" placeholder="Ingrese Marca/Modelo" class="fieldset__placeholder">
+            </div>
+            <!--Ingreso de email-->
+            <div>
+                <label for="email" class="fieldset__label">
+                    Email
+                </label>
+                <input type="email" name="mail" placeholder="ingresa tu email" class="fieldset__placeholder">
+            </div>
+            <div>
+                <label for="telefono" class="fieldset__label">
+                    Telefono
+                </label>
+                <input type="tel" name="telefono" placeholder="Ingrese Numero Telefonico">
+            </div>
+            <div>
+                <label for="consulta" class="fieldset__label">
+                    Consulta
+                </label>
+                <input type="text" name="consulta" placeholder="Ingrese su Consulta" class="fieldset__placeholder">
+                           </div>
+            <!--Submit de datos-->
+            <div>
+                <input type="submit" value="Registrar" class="fieldset__button">
+             </div>
+            <!--Reset de datos-->
+            <div>
+                <input type="reset" value="Reset" class="fieldset__button">
+             </div>
+            </fieldset>
+     </form>
+</div>
+
+
+
+
+</main>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+<footer>
+
+    <section class="footer__content">
+        
+        <div class="footer__img">
+            <!--Logo con enlace a home-->
+            <div class="footer__logoContainer">
+                <a href="index.html"> 
+                    <img class="logoContainer__image" src="../img/logo_footer.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer_sn">
+                <!--Boton Instagram-->
+                   <div class="footer_igIcon">
+                       <a href="https://instagram.com/garyparts?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <img src="../img/ig_white.png" class="bottomButtons__icon"  alt="">
+                        </a>
+                    </div>
+                <!--Boton Facebook-->
+                   <div class="footer_fbIcon">
+                       <a href="https://www.facebook.com/Gary-Parts-Garage-109447371522676/" target="_blank">
+                       <img src="../img/fb_white.png" class="bottomButtons__icon" alt="">
+                       </a>
+                   </div>
+            </div>
+        </div>    
+            <!--Datos de empresa y contacto-->
+        <div class="footer_info">
+                    <ul class="info__list">
+                        <li class="list__elementFooter">Salguero 2189</li>
+                        <li class="list__elementFooter">Baradero Bs.As.</li>
+                        <li class="list__elementFooter"> emaiL@email.com</li>
+                        <li class="list__elementFooter">(3329)15123123</li>
+                    </ul>
+        </div>
+        </section>
+    <!--Datos de creador de pagina-->     
+        <div class="footer__rights">
+            <h3 class="rights__text">
+                Derechos reservados - 2022 - Garyparts - desarrollado por XXXX
+            </h3>
+        </div>  
+
+        
+    </footer>
+</body>
+</html>

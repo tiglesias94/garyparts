@@ -1,0 +1,523 @@
+/*Reset de estilos por defecto del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+/*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
+body{
+
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75% 10% ;
+}
+
+header{
+    grid-area: header;  
+    display: grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 40% 60%;
+    background-color: rgb(230, 230, 230);
+
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.964);
+    height: 100%;
+    grid-template-areas: "content ."
+                        "cred cred";
+    grid-template-columns:70% 30%;
+    grid-template-rows: 85% 15%;
+}
+
+/*ESTILOS HEADER*/
+
+        /*Estilos BLOQUE que contiene Logotipo*/
+        .logo{
+            height: 100%;
+            grid-area: logo;
+            align-self: center;
+
+            
+        }
+            /*Estilos Logotipo*/
+                .logo__img{
+                height: 3.5rem;
+                }
+
+        /*Estilos BLOQUE que contiene barra de navegacion*/        
+        .navBar{ 
+            grid-area: nav;
+            align-self: center;
+        }
+            /*Estilos de barra de navegacion*/ 
+            .navBar__list{
+                list-style-type: none;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+                /*Estilos elementos de barra de navegacion*/  
+                    .list__element{ 
+                        text-decoration: none;
+                        margin-right: 2%;
+                    }
+                    /*Estilos enlaces*/  
+                        .enlaces{
+                            text-decoration: none;
+                            color: black;     
+                            font-family: 'Nunito Sans'; 
+                            font-size: 1.2rem;
+                            font-style: bold;
+                            font-weight: bold;
+                        }
+    .header__hamb{
+        display: none;
+    }
+
+/*ESTILOS FOOTER*/
+
+.footer__content{
+    grid-area: content;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.footer__img{
+    grid-area: logo;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin-right: 2%;
+}
+        /*Estilos de BLOQUE que contiene logo en footer*/
+        .footer__logoContainer{
+            margin: 1rem;
+            }
+
+            /*Estilos de logo en footer*/
+            .logoContainer__image{
+                width: 8rem;
+                padding: 1%;       
+                }
+
+        /*Estilos de BLOQUE que contiene botones a redes sociales*/               
+        .footer_sn{
+
+            align-self: center;
+            justify-self: flex-start;
+            }
+                .bottomButtons__icon{
+                    width: 2.5rem;
+                    height: auto;
+                    margin: 2%;
+                }
+    
+
+        /*Estilos de BLOQUE que contiene info de contacto*/
+        .footer_info{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+                    /*Estilos de BLOQUE que contiene lista en info de contacto*/
+                    .info__list{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                    }
+                        /*Estilos elementos de lista en info de contacto*/
+                        .list__elementFooter{
+                            font-family: 'Nunito Sans';
+                            list-style-type: none;
+                            color: whitesmoke;
+                            font-size: 1.1rem;
+                            font-weight:600;
+                            text-align: justify;
+                        }
+
+            /*Estilos de BLOQUE que contiene texto de derechos reservados*/
+            .footer__rights{
+            grid-area: cred;
+            height: 100%;
+            background-color:#18181844;
+            display: flex;
+            justify-content: center;
+            }
+
+                /*Estilos de texto de derechos reservados*/
+                .rights__text{
+                    font-family: 'Nunito Sans';
+                    color: rgba(143, 142, 142, 0.352);
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+
+
+/*------------------ESTILOS INDEX.HTML------------------*/
+
+/*ESTILOS MAIN*/
+
+/*Estilos BLOQUE que contiene seccion principal*/
+.indexContent{
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+                        "para ."  
+                        ;
+    grid-template-columns: 50% 50%;
+    background-image: url(../img/index__background.png);
+    background-repeat: no-repeat;  
+    background-position: top center;
+    height: 70rem;
+    }
+        /*Estilos de BLOQUE que contiene parrafo en seccion principal*/
+        .indexContent__article{
+            grid-area: para;
+            align-self: center;
+
+        }
+                /*Estilos de parrafo en seccion principal*/
+                .article__words{
+                    width: 100%;
+                    padding: 0% 15% 0% 15%;
+                    text-align: center;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: 1.6rem;
+                    color: white;       
+                    ;             
+                }
+
+                /*Estilos de enlace en seccion principal*/
+                .enlaceMain{
+                    display: block;
+                    text-decoration: none;
+                    background-color: none;
+                    color: #ed1c24;     
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+
+
+/*------------------ESTILOS TIENDA.HTML------------------*/
+
+.store__section{
+    background-color: rgba(0, 0, 0, 0.926);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+/*Estilos de BLOQUE que contiene productos en tienda*/
+
+.store__Card{
+    background-color: #000000d6;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin: 1%;
+    width: 22rem;
+}
+
+    /*Estilos de titulo de producto*/
+    .card__Title{
+        background-color: #ed1c23c2;
+        margin-top: 3%;
+        width: 100%;
+        border-radius: 20%;
+        text-align: center;
+        color: white;     
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    /*Estilos de BLOQUE que contiene imagen de producto*/
+    .card__img{
+        width: 95%;    
+        padding: 5%;  
+        border-radius: 10%;
+        object-fit:cover;
+    }
+
+
+/*------------------ESTILOS DESARROLLOS.HTML------------------*/
+
+/*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
+.desarrollos__Content{
+    background-color: black;
+}
+
+    /*Estilos de titulo de articulo en seccion desarrollos*/
+    .desarrollos__Header{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+    }
+
+    /*Estilos de texto en articulo de seccion desarrollos*/
+
+    .desarrollos__Paragraph{
+
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/
+    
+    .desarrollos_imageBlock{
+
+        background-color: #ed1c24;
+        border-style: solid;
+        border-color: black;
+
+    }
+
+        /*Estilos de imagen de articulo en seccion desarrollos*/
+        .desarrollos__img{
+
+        }
+
+
+/*------------------ESTILOS CLIENTES.HTML------------------*/
+.clientes__main{
+    background-color: black;
+}
+
+/*Estilos de BLOQUE que contiene articulos de seccion clientes*/
+.clientes__section{
+
+}
+/*Estilos de articulos de seccion clientes*/
+    .clientes__article{
+
+    }
+
+        /*Estilos de titulo de articulo en seccion clientes*/
+        .clientes__articleHeader{
+            font-family: 'Nunito Sans', sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+
+        /*Estilos de lista de especificaciones generales de articulo en seccion clientes*/
+        .clientes__articleList1{
+
+        }
+
+            .clientes__specList{
+                font-family: 'Nunito Sans', sans-serif;
+                color: white;
+                font-weight: bold;
+                list-style-type:none;
+                margin: 5px;
+            }
+
+        /*Estilos de lista de modificaciones de articulo en seccion clientes*/
+        .clientes__articleList2{
+        margin-left: 20px;
+        }
+
+            .clientes__modList{
+                font-family: 'Nunito Sans', sans-serif;
+                color: white;
+                font-weight: bold;
+                list-style-type:disc;
+            }
+
+        /*Estilos de BLOQUE que contiene imagen de articulo en seccion clientes*/
+        .clientes__imgContainer{
+
+        }
+
+        /*Estilos de imagen de articulo en seccion clientes*/
+
+            .clientes__img{
+                width: 500px;
+                height: auto;
+            }
+
+/*------------------ESTILOS CONTACTO.HTML------------------*/
+
+    .form__fieldset{
+        margin-top: 1%;
+    }
+    .fieldset__title{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .fieldset__label{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+    }
+    .fieldset__placeholder{
+        width: 35%;
+        padding: 12px 20px;
+        margin: 8px;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #ed1c24;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .fieldset__button{
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+    }
+
+/* Media Queries */
+
+/* BREAKING POINT Tablets*/
+
+@media screen and (max-width:1023px) {
+
+    header{
+    grid-area: header;  
+    display: grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 85% 15%;
+    }
+
+    .header__hamb{
+        grid-area: nav;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    .menu__icon{
+        height: 3rem;
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    .navBar__list{
+        display: none;
+    }
+
+    .navBar{ 
+        grid-area: none;
+    }
+
+    .indexContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(../img/index__background.png) ;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: top center;
+        height: 50rem;
+        }
+        
+    ;
+}
+
+/* BREAKING POINT Telefonos*/
+
+@media screen and (max-width:480px) {
+
+    html{
+        font-size: 75% ;
+    }
+    .header__hamb{
+        grid-area: nav;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    .menu__icon{
+        height: 3rem;
+        align-self: center;
+    }
+
+    .navBar{ 
+        grid-area: none;
+        display: none;
+    }
+
+    .indexContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(../img/index__background.png) ;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: top center;
+        height: 50rem;
+        }
+        
+    /*ESTILOS FOOTER*/
+
+.footer__content{
+    grid-area: content;
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "left center right"
+                        "cred cred cred";
+    grid-template-columns: 50% 20% 30%;
+    grid-template-rows: 80% 20%;
+}
+
+.footer__img{
+    grid-area: left;
+}
+
+/*Estilos de BLOQUE que contiene info de contacto*/
+.footer_info{
+    grid-area: right;
+}
+                    /*Estilos de BLOQUE que contiene lista en info de contacto*/
+                    .info__list{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                    }
+                        /*Estilos elementos de lista en info de contacto*/
+                        .list__elementFooter{
+                            font-family: 'Nunito Sans';
+                            list-style-type: none;
+                            color: white;
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                            text-align: justify;
+                        }
+    ;
+}
