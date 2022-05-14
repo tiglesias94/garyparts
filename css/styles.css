@@ -10,32 +10,20 @@ html{
 }
 /*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
 body{
-
     display: grid;
-    grid-gap: 0.2rem;
-    grid-template-areas:
-                        "header"
+    grid-template-areas:"header"
                         "main"
-                        "footer" ;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 75% 10%;
-    
-
+                        "footer";
+    grid-template-rows: 0.5fr 12fr 2fr;
 }
 
 header{
     grid-area: header;  
-    display: grid;
-    grid-template-areas: "logo nav";
-    grid-template-columns: 40% 60%;
-    background-color: rgb(230, 230, 230);
-    
-
+    display: flex;
+    background-color: rgba(230, 230, 230, 0.899);
 }
-
 main{
     grid-area: main;
-
 }
 
 footer{
@@ -47,35 +35,34 @@ footer{
                         "cred cred";
     grid-template-columns:70% 30%;
     grid-template-rows: 85% 15%;
-
 }
 
 /*ESTILOS HEADER*/
 
         /*Estilos BLOQUE que contiene Logotipo*/
         .logo{
-            height: 100%;
-            grid-area: logo;
+            width: 100%;
+            justify-self: flex-start;
             align-self: center;
-            
         }
 
             /*Estilos Logotipo*/
                 .logo__img{
-                height: 0.5rem;
+                height: 3.5rem;
                 }
 
         /*Estilos BLOQUE que contiene barra de navegacion*/        
         .navBar{ 
             grid-area: nav;
-            align-self: center;
+            justify-self: flex-end;
+            width: 100%;
         }
             /*Estilos de barra de navegacion*/ 
             .navBar__list{
                 list-style-type: none;
-                height: 100%;
                 display: flex;
                 justify-content: flex-end;
+                height: 100%;
                 align-items: center;
             }
                 /*Estilos elementos de barra de navegacion*/  
@@ -186,7 +173,6 @@ footer{
 /*Estilos BLOQUE que contiene seccion principal*/
 .indexContent{
     display: grid;
-    height: 100%;
     grid-template-areas: 
                         "para ."
                         ;
@@ -195,7 +181,6 @@ footer{
     background-repeat: no-repeat;  
     background-position: top center;
     height: 70rem;
-    
     }
         /*Estilos de BLOQUE que contiene parrafo en seccion principal*/
         .indexContent__article{
@@ -410,27 +395,17 @@ footer{
 
 @media screen and (max-width:1023px) {
 
-    header{
-    grid-area: header;  
-    display: grid;
-    grid-template-areas: "logo nav";
-    grid-template-columns: 85% 15%;
-    }
 
     .header__hamb{
         grid-area: nav;
         width: 100%;
         display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: flex-end;
-
+        align-self: center;
+        justify-content: flex-end;
     }
-
     .menu__icon{
         height: 3rem;
-        align-self: center;
-        margin-right: 1rem;
+        margin-right: 4%;
     }
 
     .navBar__list{
@@ -465,19 +440,15 @@ footer{
 
     header{
         grid-area: header;  
-        display: grid;
+        display: flex;
         width: 100vw;
-        grid-template-areas: "logo"
-                            "hamb";
-        grid-template-rows: 50% 50%;
     }
 
         .logo{
-            display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             grid-area: logo;
-            width: 100vw; 
-            height: 100%;
+            width: 100%;
+            background-color: coral;
         }
 
             /*Estilos Logotipo*/
@@ -487,14 +458,13 @@ footer{
                 }
 
     .header__hamb{
-        grid-area: hamb;
-        width: 100vw;      
+        background-color: darkmagenta;
+        width: 100%;      
     }
 
     .menu__icon{
-        display: flex;
-        justify-content: center;
         height: 3rem;
+        background-color: lightgreen;
 
 
     }
