@@ -10,12 +10,10 @@ html{
 }
 /*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
 body{
-    height: max-content;
     display: grid;
     grid-template-areas:"header"
                         "main"
                         "footer";
-    grid-template-rows: max-content max-content max-content;
 }
 
 header{
