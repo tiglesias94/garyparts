@@ -448,7 +448,6 @@ footer{
             justify-content: flex-start;
             grid-area: logo;
             width: 100%;
-            background-color: coral;
         }
 
             /*Estilos Logotipo*/
@@ -458,15 +457,11 @@ footer{
                 }
 
     .header__hamb{
-        background-color: darkmagenta;
         width: 100%;      
     }
 
     .menu__icon{
         height: 3rem;
-        background-color: lightgreen;
-
-
     }
 
     .navBar{ 
