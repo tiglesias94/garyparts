@@ -16,7 +16,9 @@ body{
     grid-template-areas:"header"
                         "main"
                         "footer";
-    grid-template-rows: 100px 10000px 100px;
+    
+    grid-auto-rows: max-content;
+    
 }
 
 header{
@@ -631,12 +633,12 @@ flex-wrap: wrap;
     
         
         
-    ;
+;
 }
 
 /* BREAKING POINT Telefonos*/
 
-@media screen and (max-width:480px) {
+1123@123media screen and (max-width:480px) {
 
     html{
         font-size: 75% ;
@@ -660,17 +662,17 @@ flex-wrap: wrap;
                 align-self: center;
                 }
 
-    .header__hamb{
-        width: 100%;      
-    }
+        .header__hamb{
+            width: 100%;      
+        }
 
-    .menu__icon{
-        height: 3rem;
-    }
+        .menu__icon{
+            height: 3rem;
+        }
 
-    .navBar{ 
-        display: none;
-    }
+        .navBar{ 
+            display: none;
+        }
     
     .indexContent{
         display: flex;
@@ -681,42 +683,42 @@ flex-wrap: wrap;
         background-size: cover;  
         background-position: top center;
         height: 60rem;
-        }
+    }
 
     /*ESTILOS FOOTER*/
 
-.footer__content{
-    grid-area: content;
-    display: grid;
-    width: 100vw;
-    grid-template-areas: "left center right"
-                        "cred cred cred";
-    grid-template-columns: 50% 20% 30%;
-    grid-template-rows: 90% 10%;
-}
+    .footer__content{
+        grid-area: content;
+        display: grid;
+        width: 100vw;
+        grid-template-areas: "left center right"
+                            "cred cred cred";
+        grid-template-columns: 50% 20% 30%;
+        grid-template-rows: 90% 10%;
+    }
 
-.footer__img{
-    grid-area: left;
-}
+        .footer__img{
+            grid-area: left;
+        }
 
-/*Estilos de BLOQUE que contiene info de contacto*/
-.footer_info{
-    grid-area: right;
-}
-                    /*Estilos de BLOQUE que contiene lista en info de contacto*/
-                    .info__list{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                        /*Estilos elementos de lista en info de contacto*/
-                        .list__elementFooter{
-                            font-family: 'Nunito Sans';
-                            list-style-type: none;
-                            color: white;
-                            font-size: 0.9rem;
-                            font-weight: bold;
-                            text-align: center;
-                        }
-    ;
+        /*Estilos de BLOQUE que contiene info de contacto*/
+        .footer_info{
+            grid-area: right;
+        }
+            /*Estilos de BLOQUE que contiene lista en info de contacto*/
+            .info__list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+                /*Estilos elementos de lista en info de contacto*/
+                .list__elementFooter{
+                    font-family: 'Nunito Sans';
+                    list-style-type: none;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+;
 }
