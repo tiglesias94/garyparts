@@ -17,7 +17,7 @@ body{
                         "main"
                         "footer";
     
-    grid-auto-rows: max-content;
+    grid-auto-rows: min-content;
     
 }
 
@@ -629,7 +629,7 @@ flex-wrap: wrap;
             border-radius: 20%;
             max-width: 40%;
             max-height: auto;
-            padding: 1%;
+            padding: 1%;}
     
         
         
@@ -638,8 +638,9 @@ flex-wrap: wrap;
 
 /* BREAKING POINT Telefonos*/
 
-1123@123media screen and (max-width:480px) {
 
+@media screen and (max-width:480px) {
+    
     html{
         font-size: 75% ;
     }
@@ -720,5 +721,6 @@ flex-wrap: wrap;
                     font-weight: bold;
                     text-align: center;
                 }
+        
 ;
 }
