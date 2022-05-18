@@ -84,9 +84,8 @@ footer{
                             text-decoration: none;
                             color: black;     
                             font-family: 'Nunito Sans'; 
-                            font-size: 1.2rem;
-                            font-style: bold;
-                            font-weight: bold;
+                            font-size: 1.1rem;
+                            font-weight: 500 ;
                         }
     .header__hamb{
         display: none;
@@ -152,9 +151,9 @@ footer{
                         .list__elementFooter{
                             font-family: 'Nunito Sans';
                             list-style-type: none;
-                            color: whitesmoke;
-                            font-size: 1.1rem;
-                            font-weight:600;
+                            color: rgb(224, 224, 224);
+                            font-size: 0.85rem;
+                            font-weight:400;
                             text-align: justify;
                         }
 
@@ -213,11 +212,12 @@ flex-wrap: wrap;
                 /*Estilos de parrafo en seccion principal*/
                 .article__words{
                     width: 100%;
-                    padding: 0% 15% 0% 15%;
+                    padding: 0% 10% 0% 10%;
                     text-align: center;
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.6rem;
-                    color: white;       
+                    font-size: 1.5rem;
+                    color: rgb(252, 252, 252);      
+                    font-style: italic; 
                     ;             
                 }
 
@@ -228,8 +228,9 @@ flex-wrap: wrap;
                     background-color: none;
                     color: #ed1c24;     
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                     text-align: center;
+                    font-weight: 700;
                 }
 
 /*ESTILOS SECTION 2*/
