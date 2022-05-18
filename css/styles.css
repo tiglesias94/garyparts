@@ -12,7 +12,8 @@ html{
 /*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
 body{
     height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-areas:"header"
                         "main"
                         "footer";
