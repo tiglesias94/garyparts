@@ -226,7 +226,7 @@ flex-wrap: wrap;
 .main__highProd{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: max-content;
 
 }
     .main__section2{
