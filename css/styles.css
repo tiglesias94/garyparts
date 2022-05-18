@@ -16,7 +16,7 @@ body{
     grid-template-areas:"header"
                         "main"
                         "footer";
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
 }
 
 header{
@@ -179,6 +179,7 @@ footer{
 .index__main{
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 }
 
 /*Estilos BLOQUE que contiene seccion principal*/
@@ -220,7 +221,11 @@ flex-direction: column;
                     font-size: 1.6rem;
                     text-align: center;
                 }
+.main__highProd{
+    display: flex;
+    flex-direction: column;
 
+}
     .main__section2{
         display: grid;
         width: 100vw;
@@ -229,80 +234,79 @@ flex-direction: column;
         margin-top: 2%;
         margin-bottom: 2%;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(234,234,234,1) 25%, rgba(229,229,229,1) 50%, rgba(239,239,239,1) 75%, rgba(255,255,255,1) 100%); 
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
 
-    }
+        }
 
-    .section2__words{
-        grid-area: is2_words;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section2__header{
-        text-align: center;
-        align-self: CENTER;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1.5rem;  
-        font-weight:800;
-
-    }
-
-    .section2__high{
-        grid-area: is2_img;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-top: 1%;
-    }
-
-    .index__card{
-        background-color: rgba(236, 236, 236, 0.11);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 25rem;
-    }
-    
-        /*Estilos de titulo de producto*/
-        .index__cardTitle{
-            background-color: #b7b7b70e;
-            margin-top: 3%;
-            width: 100%;
-            text-align: center;    
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 1.15rem;
-            font-weight: bold;
-            color: #ed1c24;
-            height: 2rem;
+        .section2__words{
+            grid-area: is2_words;
             display: flex;
+            flex-direction: column;
+        }
+
+        .section2__header{
+            text-align: center;
+            align-self: CENTER;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.5rem;  
+            font-weight:800;
+        }
+
+        .section2__high{
+            grid-area: is2_img;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 1%;
+        }
+
+        .index__card{
+            background-color: rgba(236, 236, 236, 0.11);
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            width: 25rem;
         }
         
-        /*Estilos de BLOQUE que contiene imagen de producto*/
-        .index__cardImg{
-            width: 90%;
-            max-height: 25rem;   
-            padding: 5%;  
-            border-radius: 10%;
-            object-fit:cover;
+            /*Estilos de titulo de producto*/
+            .index__cardTitle{
+                background-color: #b7b7b70e;
+                margin-top: 3%;
+                width: 100%;
+                text-align: center;    
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 1.15rem;
+                font-weight: bold;
+                color: #ed1c24;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /*Estilos de BLOQUE que contiene imagen de producto*/
+            .index__cardImg{
+                width: 90%;
+                max-height: 25rem;   
+                padding: 5%;  
+                border-radius: 10%;
+                object-fit:cover;
+            }
+        
+        .card__info{
+
         }
-    
-    .card__info{
 
-    }
+        .card__infoItem{
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.1rem; 
+            list-style-type: none;   
+            font-weight: bold;
+            text-align: center;
+        }
 
-    .card__infoItem{
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1.1rem; 
-        list-style-type: none;   
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .main__section3{
+.main__section3{
         display: grid;
         width: 100vw;
         grid-template-areas: "is3_words is3_img";
@@ -310,7 +314,7 @@ flex-direction: column;
         margin-top: 2%;
         margin-bottom: 10%;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(234,234,234,1) 25%, rgba(229,229,229,1) 50%, rgba(239,239,239,1) 75%, rgba(255,255,255,1) 100%); 
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
     }
         .section3__words{
             grid-area: is3_words;
