@@ -12,6 +12,7 @@ html{
 /*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
 body{
     min-height: 100vh;
+    margin-top: 4%;
     display: grid;
     grid-template-areas:"header"
                         "main"
@@ -21,8 +22,12 @@ body{
     }
 header{
     grid-area: header;  
+    position: fixed;
+    top: 0;
     display: flex;
+    width: 100%;
     background-color: rgba(230, 230, 230, 0.899);
+    z-index: 1;
 }
 
 main{
@@ -226,6 +231,9 @@ flex-wrap: wrap;
                     font-size: 1.6rem;
                     text-align: center;
                 }
+
+/*ESTILOS SECTION 2*/
+
 .main__highProd{
 
 }
@@ -233,9 +241,9 @@ flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 1%;
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
+        margin-top: 5%;
 
         }
 
@@ -307,13 +315,14 @@ flex-wrap: wrap;
             text-align: center;
         }
 
+/*ESTILOS SECTION 3*/
 .main__section3{
         display: grid;
         height: fit-content;
         width: 100vw;
         grid-template-areas: "is3_words is3_img";
         grid-template-columns: 35% 65%;
-        margin-top: 2%;
+        margin-top: 7%;
         margin-bottom: 10%;
         background: rgb(255,255,255);
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
@@ -609,6 +618,11 @@ flex-wrap: wrap;
 
 @media screen and (max-width:1023px) {
     
+    body{
+        min-height: 100vh;
+        margin-top: 12%;
+    }
+
     .header__hamb{
         grid-area: nav;
         width: 100%;
