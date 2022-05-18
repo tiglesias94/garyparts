@@ -737,41 +737,5 @@ flex-wrap: wrap;
         background-position: top center;
         height: 60rem;
     }
-
-    /*ESTILOS FOOTER*/
-
-    .footer__content{
-        grid-area: content;
-        display: grid;
-        width: 100vw;
-        grid-template-areas: "left center right"
-                            "cred cred cred";
-        grid-template-columns: 50% 20% 30%;
-        grid-template-rows: 90% 10%;
-    }
-
-        .footer__img{
-            grid-area: left;
-        }
-
-        /*Estilos de BLOQUE que contiene info de contacto*/
-        .footer_info{
-            grid-area: right;
-        }
-            /*Estilos de BLOQUE que contiene lista en info de contacto*/
-            .info__list{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-                /*Estilos elementos de lista en info de contacto*/
-                .list__elementFooter{
-                    font-family: 'Nunito Sans';
-                    list-style-type: none;
-                    color: white;
-                    font-size: 0.9rem;
-                    font-weight: bold;
-                    text-align: center;
-                }   
 ;
 }
