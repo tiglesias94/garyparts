@@ -12,8 +12,7 @@ html{
 /*------------------ESTILOS COMUNES A TODOS LOS HTML------------------*/
 body{
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-template-areas:"header"
                         "main"
                         "footer";
@@ -178,6 +177,13 @@ footer{
 
 /*ESTILOS MAIN*/
 
+.index__body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-auto-rows: min-content;
+    
+}
 
 .index__main{
 display: flex;
