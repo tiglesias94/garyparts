@@ -20,7 +20,8 @@ body{
     grid-auto-rows: auto;
     overflow: scroll;
     }
-header{
+
+    header{
     grid-area: header;  
     position: fixed;
     top: 0;
