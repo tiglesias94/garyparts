@@ -29,45 +29,62 @@
         </div>
 
         <!--Barra de navegacion a otros html-->
-        <nav class="navBar">
-
-            <ul class="navBar__list">
-
-                <li class="list__element">
-                    <a class="enlaces" href="../index.html">
-                        HOME</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/tienda.html">
-                        TIENDA</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/desarrollos.html">
-                    DESARROLLOS</a>
-                </li>
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/clientes.html">
-                    CLIENTES</a>
-                </li>
-
-                <li class="list__element" >
-                    <a class="enlaces" href="../pages/contacto.html">
-                    CONTACTO</a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <!--Icono Menu Hamburguesa-->
-        <div class="header__hamb">
-            <img src="../img/menu_hamb.png" alt="" class="menu__icon">
-        </div>
+        <nav class="navbar navbar-expand-lg navBarcss">
+            <div class="container-fluid">
+              <button class="navbar-toggler hambIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" aria-current="page" href="../index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="tienda.html">TIENDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="clientes.html">CLUB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="desarrollos.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-<main>
+<main class="subStore__main">
+
+    <H1 class="subStore__title">HONDA CIVIC EG (1992-1995)</H1>
+    
+    <section class="subStore__section">
+        
+        <article class="subStore__card">
+            <h1 class="subStore__cardTitle">DUAL POD</h1>
+            <div class="subStore__cardImg">
+                <a href="tiendaEG.html"><img src="../img/podEG.jpeg" alt="Descripcion Producto 1" class="subStore__img"></a>
+            </div>
+        </article>      
+
+        <article class="subStore__card">
+            <h1 class="subStore__cardTitle">LIP FRONTAL HATCHBACK</h1>
+            <div class="subStore__cardImg">
+                <a href="tiendaEG.html"><img src="../img/lipEGh.jpg" alt="Descripcion Producto 1" class="subStore__img"></a>
+            </div>
+        </article>     
+
+        <article class="subStore__card">
+            <h1 class="subStore__cardTitle">LIP FRONTAL SEDAN</h1>
+            <div class="subStore__cardImg">
+                <a href="tiendaEG.html"><img src="../img/lipEGs.jpg" alt="Descripcion Producto 1" class="subStore__img"></a>
+            </div>
+        </article>  
+
+    </section>
 
 </main>
 

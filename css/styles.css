@@ -64,17 +64,10 @@ footer{
 
         /*Estilos BLOQUE que contiene barra de navegacion*/        
         .navBarcss{ 
-            justify-self: flex-end;
-            width: 100%;
+        justify-items: flex-end;  
+        background-color: rgba(230, 230, 230, 0.171);
         }
-            /*Estilos de barra de navegacion*/ 
-            .navBar__list{
-                list-style-type: none;
-                display: flex;
-                justify-content: flex-end;
-                height: 100%;
-                align-items: center;
-            }
+
                 /*Estilos elementos de barra de navegacion*/  
                     .list__element{ 
                         text-decoration: none;
@@ -87,11 +80,14 @@ footer{
                             font-family: 'Nunito Sans'; 
                             font-size: 1.1rem;
                             font-weight: 500 ;
+                            text-align: right;
                         }
-    .header__hamb{
-        display: none;
-    }
 
+                        .enlaces:hover{
+                            color: #ed1c24;
+                        }
+
+                        
 /*ESTILOS FOOTER*/
 
 .footer__content{
@@ -174,8 +170,6 @@ footer{
                     font-size: 0.8rem;
                     text-align: center;
                 }
-
-
 /*------------------ESTILOS INDEX.HTML------------------*/
 
 /*ESTILOS MAIN*/
@@ -322,24 +316,26 @@ flex-wrap: wrap;
         display: grid;
         height: fit-content;
         width: 100vw;
-        grid-template-areas: "is3_words is3_img";
+        grid-template-areas: "is3_words is3_img"
+                             "is3_specs is3_img";
         grid-template-columns: 35% 65%;
+        grid-template-rows: 20% 80%;
         margin-top: 7%;
         margin-bottom: 10%;
         background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 15%, rgba(236,236,236,1) 50%, rgba(231,231,231,1) 85%, rgba(255,255,255,1) 100%); 
     }
         .section3__words{
             grid-area: is3_words;
-            display: grid;
-            grid-template-areas: "is3Words_a" "is3Words_b" "is3Words_c";
-            grid-template-rows: 10% 15% 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
         }
             
             .section3__header{
                 text-align: center;
-                grid-area: is3Words_a;
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 1.6rem;  
                 font-weight: 800;
@@ -349,47 +345,50 @@ flex-wrap: wrap;
                 align-items: center;
                 justify-self: center;
                 justify-content: center;
+                background-color: black;
+                color: white;
+        
                 
             }
             .section3__para{
-                grid-area: is3Words_b;
-                text-align: center;
-                align-self: center;
                 font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.6rem;  
+                font-size: 1.4rem;  
                 font-weight: 600;
                 width: 90%;
-                align-items: center;
+                text-align: center;
                 justify-self: center;
-                justify-content: center;
-                color: #ed1c24;
+                align-self: center;
+                background-color: #fffb00c9;
 
             }
 
             .section3__specs{
-                grid-area: is3Words_c;
+                grid-area: is3_specs;
                 font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: top;
-                padding-top: 2%;
+                margin-top: 1.5rem;
+
             }
 
             .section3__list{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
             }
             .section3__itemsM{
                 list-style-type: none;
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 700;
-                color: #ed1c24;
+                
             }
             .section3__items{
                 list-style-type: none;
+                font-size: 1rem;
             }
 
             .section3__pic{
@@ -427,7 +426,7 @@ flex-wrap: wrap;
 .store__title{
     text-align: center;    
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     background-color: #a5a5a515;
     margin-top: 2%;
 
@@ -478,6 +477,80 @@ flex-wrap: wrap;
     color: #464646;
 }
 
+
+
+/*------------------ESTILOS SUB-TIENDA.HTML------------------*/
+
+.subStore__main{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subStore__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.subStore__title{
+    text-align: center;    
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+    background-color: #c5c5c515;
+    margin-top: 2%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Estilos de BLOQUE que contiene productos en tienda*/
+
+.subStore__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%; 
+    background-color: #aaa9a909;
+    border-radius: 5% ;
+
+}
+
+    /*Estilos de titulo de producto*/
+    .subStore__cardTitle{
+        margin-top: 3%;
+        width: 100%;
+        text-align: center;    
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.15rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f30000cb;
+        background-color: #46464605;
+        height: 100%;
+
+    }
+    
+    /*Estilos de BLOQUE que contiene imagen de producto*/
+    .subStore__cardImg{
+        width: 20rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subStore__img{
+        width: 20rem;
+        padding: 3%;  
+        border-radius: 15%;
+    }
 
 
 /*------------------ESTILOS DESARROLLOS.HTML------------------*/
@@ -619,31 +692,20 @@ flex-wrap: wrap;
 
 
 @media screen and (max-width:1023px) {
-    
+   
+    .hambIcon{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+    }
+
+
     body{
         min-height: 100vh;
-        margin-top: 12%;
+        margin-top: 6%;
     }
 
-    .header__hamb{
-        grid-area: nav;
-        width: 100%;
-        display:flex;
-        align-self: center;
-        justify-content: flex-end;
-    }
-    .menu__icon{
-        height: 3rem;
-        margin-right: 4%;
-    }
-
-    .navBar__list{
-        display: none;
-    }
-
-    .navBar{ 
-        grid-area: none;
-    }
 
     .indexContent{
         display: flex;
@@ -682,7 +744,9 @@ flex-wrap: wrap;
             max-width: 40%;
             max-height: auto;
             padding: 1%;}
-    
+
+        .section3__header{
+
         
         
 ;
@@ -697,35 +761,9 @@ flex-wrap: wrap;
         font-size: 75% ;
     }
 
-    header{
-        grid-area: header;  
-        display: flex;
-        width: 100vw;
-    }
+    .main__section3{
 
-        .logo{
-            justify-content: flex-start;
-            grid-area: logo;
-            width: 100%;
-        }
-
-            /*Estilos Logotipo*/
-                .logo__img{
-                width: 25rem;
-                align-self: center;
-                }
-
-        .header__hamb{
-            width: 100%;      
-        }
-
-        .menu__icon{
-            height: 3rem;
-        }
-
-        .navBar{ 
-            display: none;
-        }
+        margin-top: 8%;}
     
     .indexContent{
         display: flex;

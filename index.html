@@ -22,6 +22,7 @@
 </head>
 
 <body class="index__body">
+    
     <header>
         <!--Logo con enlace a home-->
         <div class="logo">
@@ -31,44 +32,32 @@
         </div>
 
         <!--Barra de navegacion a otros html-->
-        <nav class="navBar">
-
-            <ul class="navBar__list">
-
-                <li class="list__element">
-                    <a class="enlaces" href="index.html">
-                        HOME</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="pages/tienda.html">
-                        TIENDA</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="pages/desarrollos.html">
-                    NOSOTROS</a>
-                </li>
-
-                <li class="list__element">
-                    <a class="enlaces" href="pages/clientes.html" style="color:#ed1c24" >
-                    CLUB</a>
-                </li>
-
-                <li class="list__element" >
-                    <a class="enlaces" href="pages/contacto.html">
-                    CONTACTO</a>
-                </li>
-
-            </ul>
-        </nav>
-
-        
-
-        <!--Icono Menu Hamburguesa-->
-        <div class="header__hamb">
-            <img src="img/menu_hamb.png" alt="" class="menu__icon">
-        </div>
+        <nav class="navbar navbar-expand-lg navBarcss">
+            <div class="container-fluid">
+              <button class="navbar-toggler hambIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="pages/tienda.html">TIENDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="pages/clientes.html">CLUB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="pages/desarrollos.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -126,8 +115,6 @@
 
         </section>
         </div>
-
-
         
         <section class="main__section3">
 
@@ -135,28 +122,11 @@
                     
                     <h2 class="section3__header">ULTIMAS NOVEDADES</h2>
 
-                    <p class="section3__para">SPOILER TRASERO SPOON SPORTS</p>
-
-                    <div class="section3__specs">
-                        <ul class="section3__list">
-                            <li class="section3__itemsM"> VEHICULOS COMPATIBLES: </li>
-                            <li class="section3__items">Honda Civic Hatchback</li>
-                            <li class="section3__itemsM">AÑO DE FABRICACIÓN:</li>
-                            <li class="section3__items">1992-1995</li>
-                            <li class="section3__itemsM">MATERIAL:</li>
-                            <li class="section3__items">Fibra de Vidrio</li>
-                            <li class="section3__itemsM">MONTAJE:</li>
-                            <li class="section3__items">Bolt-On</li>
-                            <li class="section3__itemsM">TERMINACIÓN:</li>
-                            <li class="section3__items">Primer / Listo para Pintar</li>
-
-                        </ul>
-                    </div>
+                    <p class="section3__para">REAR SPOILER SPOON SPORTS</p>
 
                 </div>
-                
 
-                    <div id="carouselExampleIndicators" class="carousel slide section3__pic d-flex d-flex justify-content-between" data-bs-ride="true">
+                                    <div id="carouselExampleIndicators" class="carousel slide section3__pic d-flex d-flex justify-content-between" data-bs-ride="true">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -179,6 +149,24 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                     </div> 
+                    
+                <div class="section3__specs">
+                    <ul class="section3__list">
+                        <li class="section3__itemsM"> VEHICULOS COMPATIBLES</li>
+                        <li class="section3__items">Honda Civic Hatchback</li>
+                        <li class="section3__itemsM">AÑO DE FABRICACIÓN</li>
+                        <li class="section3__items">1992-1995</li>
+                        <li class="section3__itemsM">MATERIAL</li>
+                        <li class="section3__items">Fibra de Vidrio</li>
+                        <li class="section3__itemsM">MONTAJE</li>
+                        <li class="section3__items">Bolt-On</li>
+                        <li class="section3__itemsM">TERMINACIÓN</li>
+                        <li class="section3__items">Primer / Listo para Pintar</li>
+                    </ul>
+                </div>
+                
+
+
 
         </section>
 

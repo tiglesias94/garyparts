@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollos</title>
-    <link rel="stylesheet" href="../css/styles.css">
-        <!-- Tipografia-->
     
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Tipografia-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
@@ -23,42 +28,32 @@
         </div>
 
         <!--Barra de navegacion a otros html-->
-        <nav class="navBar">
-
-            <ul class="navBar__list">
-
-                <li class="list__element">
-                    <a class="enlaces" href="../index.html">
-                        HOME</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/tienda.html">
-                        TIENDA</a>
-                </li >
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/desarrollos.html">
-                    NOSOTROS</a>
-                </li>
-
-                <li class="list__element">
-                    <a class="enlaces" href="../pages/clientes.html">
-                    CLUB</a>
-                </li>
-
-                <li class="list__element" >
-                    <a class="enlaces" href="../pages/contacto.html">
-                    CONTACTO</a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <!--Icono Menu Hamburguesa-->
-        <div class="header__hamb">
-            <img src="../img/menu_hamb.png" alt="" class="menu__icon">
-        </div>
+        <nav class="navbar navbar-expand-lg navBarcss">
+            <div class="container-fluid">
+              <button class="navbar-toggler hambIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" aria-current="page" href="../index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="tienda.html">TIENDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="clientes.html">CLUB</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="desarrollos.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link enlaces" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
 <main>
