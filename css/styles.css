@@ -426,7 +426,7 @@ flex-wrap: wrap;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.25rem;
     background-color: #a5a5a515;
-    margin-top: 2%;
+    margin-top: 3rem;
 
 }
 
@@ -480,10 +480,10 @@ flex-wrap: wrap;
 /*------------------ESTILOS SUB-TIENDA.HTML------------------*/
 
 .subStore__main{
-    height: 40rem;
+    height: auto;
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .subStore__section{
@@ -492,6 +492,7 @@ flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+
 }
 
 .subStore__title{
@@ -504,7 +505,6 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /*Estilos de BLOQUE que contiene productos en tienda*/
@@ -765,7 +765,6 @@ flex-wrap: wrap;
         }
 
     .main__section3{
-
         margin-top: 8%;}
     
     .indexContent{
@@ -803,10 +802,6 @@ flex-wrap: wrap;
         width: 100%;
         display: flex;
         align-items: center;
-    }
-
-    .rights__text{
-
     }
 ;
 }
