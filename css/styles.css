@@ -592,62 +592,35 @@ flex-wrap: wrap;
 
 
 /*------------------ESTILOS CLIENTES.HTML------------------*/
-.clientes__main{
-    background-color: black;
+
+.club__main{
+    display: flex;
 }
 
-/*Estilos de BLOQUE que contiene articulos de seccion clientes*/
-.clientes__section{
-
+.club__card{
+    margin: 2rem;
 }
-/*Estilos de articulos de seccion clientes*/
-    .clientes__article{
 
-    }
+.club__carousel{}
 
-        /*Estilos de titulo de articulo en seccion clientes*/
-        .clientes__articleHeader{
-            font-family: 'Nunito Sans', sans-serif;
-            color: white;
-            font-weight: bold;
-        }
+.club__info{}
 
-        /*Estilos de lista de especificaciones generales de articulo en seccion clientes*/
-        .clientes__articleList1{
+.club__infoHeader{}
 
-        }
+.club__infoPara{}
 
-            .clientes__specList{
-                font-family: 'Nunito Sans', sans-serif;
-                color: white;
-                font-weight: bold;
-                list-style-type:none;
-                margin: 5px;
-            }
+.club__ul{}
 
-        /*Estilos de lista de modificaciones de articulo en seccion clientes*/
-        .clientes__articleList2{
-        margin-left: 20px;
-        }
+.club__li{}
 
-            .clientes__modList{
-                font-family: 'Nunito Sans', sans-serif;
-                color: white;
-                font-weight: bold;
-                list-style-type:disc;
-            }
+.club__linksCont{}
 
-        /*Estilos de BLOQUE que contiene imagen de articulo en seccion clientes*/
-        .clientes__imgContainer{
+.club__links{}
 
-        }
 
-        /*Estilos de imagen de articulo en seccion clientes*/
 
-            .clientes__img{
-                width: 500px;
-                height: auto;
-            }
+
+
 
 /*------------------ESTILOS CONTACTO.HTML------------------*/
 
