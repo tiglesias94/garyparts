@@ -1,233 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    
-    <title>GaryParts</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Tipografia-->
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
-
-</head>
-
-<body class="index__body">
-    
-    <header>
-        <!--Logo con enlace a home-->
-        <div class="logo">
-            <a href="index.html"  class="logo__link">
-            <img class="logo__img" src="img/logo.png" alt="">
-            </a>
-        </div>
-
-        <!--Barra de navegacion a otros html-->
-
-        <nav class="navbar navbar-expand-lg navBarcss">
-            <div class="container-fluid">
-              <button class="navbar-toggler hambIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link enlaces" aria-current="page" href="index.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link enlaces" href="pages/tienda.html">TIENDA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link enlaces" href="pages/clientes.html">CLUB</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link enlaces" href="pages/desarrollos.html">NOSOTROS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link enlaces" href="pages/contacto.html">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <main class="index__main">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!--Seccion principal con link a html de clientes (club)-->
-        <section class="indexContent">
-
-                <article class="indexContent__article">
-                    <p class="article__words">Construimos para los que, al igual que nosotros, contemplan su vehiculo como identidad y arte, sosteniendo la cultura en un mundo que busca olvidar. </p>
-                    <a class="enlaceMain" href="pages/clientes.html">
-                        Club</a>
-                </article>
-        </section>
-
-    <!--Seccion 2, productos destacados-->
-        <div class="main__highProd">
-            
-            <section class="main__section2">
-                
-                <div class="section2__words">
-                    <h2 class="section2__header">PRODUCTOS DESTACADOS</h2>      
-                </div>
-
-                <div class="section2__high">
-
-                    <article class="index__card">
-                        <h1 class="index__cardTitle">SPOILER TYPE-R</h1>
-                        <img src="img/spoiler1__ek.jpg" alt="Descripcion Producto 1" class="index__cardImg">
-                        <ul class="card__info">
-                            <li class="card__infoItem"> Honda Civic Hatchback</li>
-                            <li class="card__infoItem"> Generación EK '96-99</li>
-                        </ul>
-                    </article>
-
-                    <article class="index__card">
-                        <h1 class="index__cardTitle">FRONT LIP</h1>
-                        <img src="img/frontLip1_eg.jpg" alt="Descripcion Producto 1" class="index__cardImg">
-                        <ul class="card__info">
-                            <li class="card__infoItem"> Honda Civic Hatchback/Sedan</li>
-                            <li class="card__infoItem"> Generación EG '92-95</li>
-                        </ul>
-                    </article>
-
-                    <article class="index__card">
-                        <h1 class="index__cardTitle">SIDE SKIRT #1</h1>
-                        <img src="img/sideSkirt1_ek.jpeg" alt="Descripcion Producto 1" class="index__cardImg">
-                        <ul class="card__info">
-                            <li class="card__infoItem"> Honda Civic Hatchback</li>
-                            <li class="card__infoItem"> Generación EK '96-99</li>
-                        </ul>
-                    </article>
-
-                </div>
-
-            </section>
         
-        </div>
+        <title>GaryParts</title>
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- Tipografia-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
 
-    <!--Seccion 3, novedades-->
-        <section class="main__section3">
+    </head>
 
-            <div class="section3__words">
-                
-                <h2 class="section3__header">ULTIMAS NOVEDADES</h2>
-
-                <h3 class="section3__subHeader">REAR SPOILER SPOON SPORTS</h3>
-
-            </div>
-
-            <!--CARRUSEL BOOTSTRAP-->
-            
-            <div id="carouselExampleIndicators" class="carousel slide section3__pic d-flex d-flex justify-content-between" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <body>
+            <header>
+                <!--Logo con enlace a home-->
+                <div class="logo">
+                    <a href="index.html"  class="logo__link">
+                    <img class="logo__img" src="img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/cliente1-1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                            <img src="img/cliente1-2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+
+                <!--Barra de navegacion a otros html-->
+
+                <nav class="navbar navbar-expand-lg navBarcss">
+                    <div class="container-fluid">
+                    <button class="navbar-toggler hambIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> 
-
-            <div class="section3__specs">
-                <ul class="section3__list">
-                    <li class="section3__itemsM"> VEHICULOS COMPATIBLES</li>
-                    <li class="section3__items">Honda Civic Hatchback</li>
-                    <li class="section3__itemsM">AÑO DE FABRICACIÓN</li>
-                    <li class="section3__items">1992-1995</li>
-                    <li class="section3__itemsM">MATERIAL</li>
-                    <li class="section3__items">Fibra de Vidrio</li>
-                    <li class="section3__itemsM">MONTAJE</li>
-                    <li class="section3__items">Bolt-On</li>
-                    <li class="section3__itemsM">TERMINACIÓN</li>
-                    <li class="section3__items">Primer / Listo para Pintar</li>
-                </ul>
-            </div>
-
-        </section>
-
-    </main>
-            
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-<footer>
-
-    <section class="footer__content">
-        
-        <div class="footer__img">
-            <!--Logo con enlace a home-->
-            <div class="footer__logoContainer">
-                <a href="index.html"> 
-                    <img class="logoContainer__image" src="img/logo_footer.png" alt="">
-                </a>
-            </div>
-
-            <div class="footer_sn">
-                <!--Boton Instagram-->
-                   <div class="footer_igIcon">
-                       <a href="https://instagram.com/garyparts?igshid=YmMyMTA2M2Y=" target="_blank">
-                        <img src="img/ig_white.png" class="bottomButtons__icon"  alt="">
-                        </a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link enlaces" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlaces" href="pages/tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlaces" href="pages/clientes.html">CLUB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlaces" href="pages/desarrollos.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enlaces" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                        </ul>
                     </div>
-                <!--Boton Facebook-->
-                   <div class="footer_fbIcon">
-                       <a href="https://www.facebook.com/Gary-Parts-Garage-109447371522676/" target="_blank">
-                       <img src="img/fb_white.png" class="bottomButtons__icon" alt="">
-                       </a>
-                   </div>
-            </div>
-        </div>    
-        
-        <!--Datos de empresa y contacto-->
-        <div class="footer_info">
-            <ul class="info__list">
-                <li class="list__elementFooter">SALGUERO 2189</li>
-                <li class="list__elementFooter">BARADERO BS.AS.</li>
-                <li class="list__elementFooter"> garyparts.garage@gmail.com</li>
-                <li class="list__elementFooter">(3329)699077</li>
-            </ul>
-        </div>
-    </section>
+                    </div>
+                </nav>
+            </header>
 
-    <!--Datos de creador de pagina-->     
-        <div class="footer__rights">
-            <h3 class="rights__text">
-               DESARROLLADO POR @t.iglesias
-            </h3>
-        </div>  
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            
+            <main>
+                <div class="index__main">
+                <!--Seccion principal con link a html de clientes (club)-->
+                    <section class="indexContent">
+                            <article class="indexContent__article">
+                                <p class="article__words">Construimos para los que, al igual que nosotros, contemplan su vehiculo como identidad y arte, sosteniendo la cultura en un mundo que busca olvidar. </p>
+                                <a class="enlaceMain" href="pages/clientes.html">
+                                    Club</a>
+                            </article>
+                    </section>
 
-        
-    </footer>
+                <!--Seccion 2, productos destacados-->
+                    <section class="main__section2">
+                        
+                        <div class="section2__words">
+                            <h2 class="section2__header">PRODUCTOS DESTACADOS</h2>      
+                        </div>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+                        <div class="section2__high">
 
+                            <article class="index__card">
+                                <h1 class="index__cardTitle">SPOILER TYPE-R</h1>
+                                <img src="img/spoiler1__ek.jpg" alt="Descripcion Producto 1" class="index__cardImg">
+                                <ul class="card__info">
+                                    <li class="card__infoItem"> Honda Civic Hatchback</li>
+                                    <li class="card__infoItem"> Generación EK '96-99</li>
+                                </ul>
+                            </article>
+
+                            <article class="index__card">
+                                <h1 class="index__cardTitle">FRONT LIP</h1>
+                                <img src="img/frontLip1_eg.jpg" alt="Descripcion Producto 1" class="index__cardImg">
+                                <ul class="card__info">
+                                    <li class="card__infoItem"> Honda Civic Hatchback/Sedan</li>
+                                    <li class="card__infoItem"> Generación EG '92-95</li>
+                                </ul>
+                            </article>
+
+                            <article class="index__card">
+                                <h1 class="index__cardTitle">SIDE SKIRT #1</h1>
+                                <img src="img/sideSkirt1_ek.jpeg" alt="Descripcion Producto 1" class="index__cardImg">
+                                <ul class="card__info">
+                                    <li class="card__infoItem"> Honda Civic Hatchback</li>
+                                    <li class="card__infoItem"> Generación EK '96-99</li>
+                                </ul>
+                            </article>
+                        
+                        </div>
+                    
+                    </section>    
+
+                    <!--Seccion 3, novedades-->
+                    <section class="main__section3">
+
+                        <div class="section3__words">
+                            <h2 class="section3__header">ULTIMAS NOVEDADES</h2>
+                            <h3 class="section3__subHeader">REAR SPOILER SPOON SPORTS</h3>
+                        </div>
+
+                        <!--CARRUSEL BOOTSTRAP-->
+                        
+                        <div id="carouselExampleIndicators" class="carousel slide d-flex d-flex justify-content-between section3__pic" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/cliente1-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                        <img src="img/cliente1-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                        </div> 
+
+                        <div class="section3__specs">
+                            <ul class="section3__list">
+                                <li class="section3__itemsM"> VEHICULOS COMPATIBLES</li>
+                                <li class="section3__items">Honda Civic Hatchback</li>
+                                <li class="section3__itemsM">AÑO DE FABRICACIÓN</li>
+                                <li class="section3__items">1992-1995</li>
+                                <li class="section3__itemsM">MATERIAL</li>
+                                <li class="section3__items">Fibra de Vidrio</li>
+                                <li class="section3__itemsM">MONTAJE</li>
+                                <li class="section3__items">Bolt-On</li>
+                                <li class="section3__itemsM">TERMINACIÓN</li>
+                                <li class="section3__items">Primer / Listo para Pintar</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </main>
+                
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <footer>
+
+                <section class="footer__content">
+                    
+                    <div class="footer__img">
+                        <!--Logo con enlace a home-->
+                        <div class="footer__logoContainer">
+                            <a href="index.html"> 
+                                <img class="logoContainer__image" src="img/logo_footer.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="footer_sn">
+                            <!--Boton Instagram-->
+                            <div>
+                                <a href="https://instagram.com/garyparts?igshid=YmMyMTA2M2Y=" target="_blank">
+                                    <img src="img/ig_white.png" class="bottomButtons__icon"  alt="">
+                                    </a>
+                            </div>
+                            <!--Boton Facebook-->
+                            <div>
+                                <a href="https://www.facebook.com/Gary-Parts-Garage-109447371522676/" target="_blank">
+                                <img src="img/fb_white.png" class="bottomButtons__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <!--Datos de empresa y contacto-->
+                    <div class="footer_info">
+                        <ul class="info__list">
+                            <li class="list__elementFooter">SALGUERO 2189</li>
+                            <li class="list__elementFooter">BARADERO BS.AS.</li>
+                            <li class="list__elementFooter"> garyparts.garage@gmail.com</li>
+                            <li class="list__elementFooter">(3329)699077</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--Datos de creador de pagina-->     
+                
+                  
+                    
+            </footer>
+            
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
-    </html>
+</html>

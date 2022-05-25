@@ -1,0 +1,97 @@
+/* Media Queries */
+/* BREAKING POINT Tablets*/
+
+@media screen and (max-width:1023px) {
+
+    body{
+        min-height: 100vh;
+        margin-top: 6%;
+    }
+
+    /* mq INDEX*/
+    main{
+        .index__main{
+            .indexContent{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-image: url(../img/index__background.png) ;
+                background-repeat: no-repeat;
+                background-size: cover;  
+                height: 50rem;
+                width: 100vw;
+            }
+
+            .main__section3{
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                margin-top: 1%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+/* BREAKING POINT Telefonos*/
+
+@media screen and (max-width:480px) {
+    
+    html{
+        font-size: 75% ;
+    }  
+
+    header{
+        .logo{
+            .logo__img{
+                height: 3rem;
+                width: 15rem;
+                }
+        }
+    }
+
+    main{
+        .index__main{
+
+            .main__section3{
+                margin-top: 8%;}
+            
+            .indexContent{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-image: url(../img/index__background.png) ;
+                background-repeat: no-repeat;
+                background-size: cover;  
+                background-position: top center;
+                height: 60rem;
+            }
+        }
+    }
+
+    footer{
+        grid-area: footer;
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.964);
+        height: max-content;
+        grid-template-areas: "content"
+                            "cred";
+        grid-template-rows: 85% 15%;
+        grid-template-columns: 1fr;
+        margin-top: auto;
+
+        .footer__content{
+            grid-area: content;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+        }
+
+        .footer__rights{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
