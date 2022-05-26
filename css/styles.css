@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  margin-top: 4%;
+  margin-top: 3.5rem;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-auto-rows: auto;
@@ -454,7 +454,7 @@ main .club__main {
 @media screen and (max-width: 1023px) {
   body {
     min-height: 100vh;
-    margin-top: 6%; }
+    margin-top: 3.5rem; }
   /* mq INDEX*/
   main .index__main .indexContent {
     display: flex;
