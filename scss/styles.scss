@@ -53,7 +53,7 @@ main{
                     display: block;
                     text-decoration: none;
                     background-color: none;
-                    color: #ed1c24;     
+                    color: $main-color;     
                     font-family: 'Nunito Sans', sans-serif;
                     font-size: 1.5rem;
                     text-align: center;
@@ -112,7 +112,7 @@ main{
                         font-family: 'Nunito Sans', sans-serif;
                         font-size: 1.15rem;
                         font-weight: bold;
-                        color: #ed1c24;
+                        color: $main-color;
                         height: 2rem;
                         display: flex;
                         align-items: center;
@@ -398,7 +398,7 @@ main{
 
             /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/
             .desarrollos_imageBlock{
-                background-color: #ed1c24;
+                background-color: $main-color;
                 border-style: solid;
                 border-color: black;
 
@@ -435,7 +435,7 @@ main{
                         font-family: 'Nunito Sans', sans-serif;
                         text-align: left;
                         font-weight: bold;
-                        border-bottom: 2px solid #ed1c24;
+                        border-bottom: 2px solid $main-color;
                         background-color: rgb(243, 243, 243);
                     }
                 }
