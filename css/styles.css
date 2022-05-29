@@ -393,28 +393,50 @@ main .subStore__main {
         border-radius: 15%; }
 
 /*Estilos DESARROLLOS.HTML*/
-main section {
+main .desarrollos__section {
+  background: linear-gradient(0deg, white 0%, #e4e4e4 25%, #e0e0e0 50%, #e9e9e9 75%, white 100%);
   /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/ }
-  main section .desarrollos__Content {
-    background-color: black;
+  main .desarrollos__section .desarrollos__banner {
+    margin-top: 1rem;
+    display: flex;
+    height: 5rem;
+    background: #8079ff;
+    background: linear-gradient(90deg, rgba(128, 121, 255, 0) 0%, #ed1c24 45%, #ed1c24 100%);
+    grid-template-areas: "banner__img desarrollo__mainHeader"; }
+    main .desarrollos__section .desarrollos__banner .desarrollos__mainHeader {
+      font-family: "Nunito Sans", sans-serif;
+      color: #edeaea;
+      font-size: 1.5rem;
+      text-align: left;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background-repeat: no-repeat; }
+    main .desarrollos__section .desarrollos__banner .banner__img {
+      opacity: 10%;
+      width: 80%; }
+  main .desarrollos__section .desarrollos__content {
+    display: grid;
+    grid-template-areas: "header header" "txt img";
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 40% 60%;
     /*Estilos de titulo de articulo en seccion desarrollos*/
     /*Estilos de texto en articulo de seccion desarrollos*/
     /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/ }
-    main section .desarrollos__Content .desarrollos__Header {
+    main .desarrollos__section .desarrollos__content .desarrollos__header {
+      grid-area: header;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: left; }
+    main .desarrollos__section .desarrollos__content .desarrollos__paragraph {
+      grid-area: txt;
       font-family: 'Nunito Sans', sans-serif;
-      font-size: 35px;
-      color: white;
-      font-weight: bold; }
-    main section .desarrollos__Content .desarrollos__Paragraph {
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 20px;
-      color: white; }
-    main section .desarrollos__Content .desarrollos_imageBlock {
-      background-color: #ed1c24;
-      border-style: solid;
-      border-color: black; }
-      main section .desarrollos__Content .desarrollos_imageBlock .desarrollos__img {
-        width: 25%; }
+      font-size: 20px; }
+    main .desarrollos__section .desarrollos__content .desarrollos_imageBlock {
+      grid-area: img; }
+      main .desarrollos__section .desarrollos__content .desarrollos_imageBlock .desarrollos__img {
+        height: 100%; }
 
 /*-------ESTILOS CONTACTO.HTML---------*/
 main div form .form__fieldset {
