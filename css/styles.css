@@ -6,7 +6,6 @@
 
 body {
   min-height: 100vh;
-  margin-top: 3.5rem;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-auto-rows: auto;
@@ -43,7 +42,8 @@ body {
         body header .navBarcss .enlaces .enlaces:hover {
           color: #ed1c24; }
   body main {
-    grid-area: main; }
+    grid-area: main;
+    margin-top: 3.5rem; }
   body footer {
     grid-area: footer;
     width: 100vw;
@@ -166,7 +166,7 @@ main .index__main {
       margin-bottom: 1%;
       width: 100vw;
       display: flex;
-      height: 3rem;
+      height: 2.5rem;
       background-image: url(../img/banner.png);
       background-repeat: no-repeat;
       grid-template-areas: "banner__img desarrollo__mainHeader"; }
@@ -177,7 +177,7 @@ main .index__main {
         align-items: center;
         font-family: "Nunito Sans", sans-serif;
         color: #edeaea;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 100%;
         height: 100%;
         padding: 0.5rem;
@@ -254,7 +254,7 @@ main .index__main {
       grid-area: is3_banner;
       width: 100vw;
       display: flex;
-      height: 3rem;
+      height: 2.5rem;
       background-image: url(../img/banner.png);
       background-repeat: no-repeat;
       grid-template-areas: "banner__img desarrollo__mainHeader"; }
@@ -265,7 +265,7 @@ main .index__main {
         align-items: center;
         font-family: "Nunito Sans", sans-serif;
         color: #e0e0e0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 100%;
         height: 100%;
         padding: 0.5rem;
@@ -317,6 +317,30 @@ main .index__main {
           color: #ed1c24; }
 
 /*Estilos TIENDA.HTML*/
+main .desarrollos__banner {
+  width: 100vw;
+  margin-top: 1rem;
+  display: flex;
+  height: 2.5rem;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  grid-template-areas: "banner__img desarrollo__mainHeader"; }
+  main .desarrollos__banner .desarrollos__mainHeader {
+    background-color: #161615cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    color: #edeaea;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    background-repeat: no-repeat; }
+  main .desarrollos__banner .banner__img {
+    opacity: 15%;
+    width: 80%; }
+
 main .store__main {
   height: 40rem;
   display: flex;
@@ -326,7 +350,7 @@ main .store__main {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.25rem;
     background-color: #a5a5a515;
-    margin-top: 3rem; }
+    margin-top: 1rem; }
   main .store__main .store__section {
     display: flex;
     flex-wrap: wrap;
@@ -370,19 +394,32 @@ main .store__main {
 
 /*Estilos SUB-TIENDA.HTML*/
 main .subStore__main {
-  height: auto;
+  height: 40rem;
   display: flex;
   flex-direction: column; }
-  main .subStore__main .subStore__title {
-    text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.25rem;
-    background-color: #c5c5c515;
-    margin-top: 2%;
-    height: 2.5rem;
+  main .subStore__main .desarrollos__banner {
+    width: 100vw;
+    margin-top: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    height: 2.5rem;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    grid-template-areas: "banner__img desarrollo__mainHeader"; }
+    main .subStore__main .desarrollos__banner .desarrollos__mainHeader {
+      background-color: #161615cb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+      color: #edeaea;
+      font-size: 1.2rem;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem;
+      background-repeat: no-repeat; }
+    main .subStore__main .desarrollos__banner .banner__img {
+      opacity: 15%;
+      width: 80%; }
   main .subStore__main .subStore__section {
     display: flex;
     flex-wrap: wrap;
@@ -426,20 +463,20 @@ main .desarrollos__section {
   /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/ }
   main .desarrollos__section .desarrollos__banner {
     width: 100vw;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
-    height: 4.5rem;
+    height: 2.5rem;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     grid-template-areas: "banner__img desarrollo__mainHeader"; }
     main .desarrollos__section .desarrollos__banner .desarrollos__mainHeader {
-      background-color: #ed1c23cb;
+      background-color: #161615cb;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "Nunito Sans", sans-serif;
       color: #edeaea;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       width: 100%;
       height: 100%;
       padding: 0.5rem;
@@ -449,27 +486,28 @@ main .desarrollos__section {
       width: 80%; }
   main .desarrollos__section .desarrollos__content {
     width: 100vw;
-    display: grid;
-    grid-template-areas: "header header" "txt img";
-    grid-template-rows: 10% 90%;
-    grid-template-columns: 40% 60%;
-    /*Estilos de titulo de articulo en seccion desarrollos*/
-    /*Estilos de texto en articulo de seccion desarrollos*/
+    display: flex;
+    flex-wrap: wrap;
     /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/ }
-    main .desarrollos__section .desarrollos__content .desarrollos__header {
-      grid-area: header;
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 1.3rem;
-      font-weight: bold;
-      text-align: left; }
-    main .desarrollos__section .desarrollos__content .desarrollos__paragraph {
-      grid-area: txt;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 20px; }
+    main .desarrollos__section .desarrollos__content .desarrollos__us {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*Estilos de texto en articulo de seccion desarrollos*/ }
+      main .desarrollos__section .desarrollos__content .desarrollos__us .desarrollos__paragraph {
+        text-align: justify;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.1rem;
+        margin-top: 2%;
+        width: 90%; }
     main .desarrollos__section .desarrollos__content .desarrollos_imageBlock {
-      grid-area: img; }
-      main .desarrollos__section .desarrollos__content .desarrollos_imageBlock .desarrollos__img {
-        width: 50%; }
+      grid-area: img;
+      width: 50vw;
+      padding: 1rem;
+      align-self: center;
+      justify-self: center; }
 
 /*-------ESTILOS CONTACTO.HTML---------*/
 main div form .form__fieldset {
@@ -500,9 +538,76 @@ main div form .form__fieldset {
 
 /*-------ESTILOS CLIENTES.HTML---------*/
 main .club__main {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%; }
+  main .club__main .desarrollos__banner {
+    margin-bottom: 1%;
+    width: 100vw;
+    display: flex;
+    height: 2.5rem;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    grid-template-areas: "banner__img desarrollo__mainHeader"; }
+    main .club__main .desarrollos__banner .desarrollos__mainHeader {
+      background-color: #ed1c23cb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+      color: #f8f8f8;
+      font-size: 1.2rem;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem;
+      background-repeat: no-repeat; }
+    main .club__main .desarrollos__banner .banner__img {
+      opacity: 15%;
+      width: 80%; }
   main .club__main .club__card {
-    margin: 2rem; }
+    width: 100vw;
+    height: 40rem;
+    margin-top: 1rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/meeting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none; }
+    main .club__main .club__card .club__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.4rem; }
+      main .club__main .club__card .club__logo .club__cardImg {
+        height: 11vw;
+        opacity: 100%; }
+    main .club__main .club__card .card__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #0e0e0ebe; }
+      main .club__main .club__card .card__body .card__bodyHeader .club__header1 {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 800;
+        display: inline;
+        color: #ed1c24; }
+      main .club__main .club__card .card__body .card__bodyHeader .club__header2 {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 3.25rem;
+        font-weight: 800;
+        display: inline;
+        color: #d7d7d7; }
+      main .club__main .club__card .card__body .card__text {
+        font-family: "Nunito Sans", sans-serif;
+        width: 70vw;
+        font-size: 1.25rem;
+        text-align: center;
+        color: #d7d7d7; }
 
 /* Media Queries */
 /* BREAKING POINT Tablets*/
