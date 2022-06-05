@@ -1,0 +1,16 @@
+
+@mixin bannerLayout{
+    display: flex;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    grid-template-areas: "banner__img desarrollo__mainHeader";
+}
+
+
+@mixin banner-subLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
