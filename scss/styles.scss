@@ -168,7 +168,7 @@ main{
             grid-template-areas: "is3_banner is3_banner"
                                 "is3_words is3_img"
                                  "is3_specs is3_img";
-            grid-template-columns: 30% 70%;
+            grid-template-columns: 40% 60%;
             grid-template-rows: 15% 15% 70%;
             margin-top: 5%;
             margin-bottom: 5%;
@@ -203,7 +203,7 @@ main{
             
                 .section3__subHeader{
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.7rem;  
+                    font-size: 1.4rem;  
                     font-weight: 600;
                     width: 100%;
                     text-align: center;
@@ -214,12 +214,14 @@ main{
             .section3__images{
                 grid-area: is3_img;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
+                background-color: rgb(25, 25, 25);
 
                 .section3__pic{
-                    width: 28rem;
+                    width: 42vw;
                     }
+
             }
 
 
@@ -277,7 +279,7 @@ main{
         }}
 
     .store__main{
-        height: 40rem;
+        height: max-content;
         display: flex;
         flex-direction: column;
 
@@ -297,6 +299,8 @@ main{
             justify-content: space-evenly;
             align-items: center;
             height: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
 
             /*Estilos de BLOQUE que contiene productos en tienda */
             .store__card{
@@ -320,12 +324,17 @@ main{
                     justify-content: center;
                     color: #464646;
                 }
+
+                .store__cardTitle:hover{
+                    color:$main-color;
+                }
                 /*Estilos de BLOQUE que contiene imagen de producto*/
                 .store__cardImg{
                     width: 30rem; 
                     padding: 1%;  
                     border-radius: 10%;
                 }
+
 
                 .store__cardInfo{
                     
@@ -348,7 +357,7 @@ main{
 main{
 
     .subStore__main{
-        height: 40rem;
+        height: max-content;
         display: flex;
         flex-direction: column;
   
@@ -376,6 +385,8 @@ main{
             justify-content: space-evenly;
             align-items: center;
             height: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
         
             .subStore__card{
                 display: flex;
@@ -412,6 +423,10 @@ main{
                     width: 20rem;
                     padding: 3%;  
                     border-radius: 15%;
+                }
+
+                .subStore__img:hover{
+                    width: 21rem;
                 }
             }
         }
