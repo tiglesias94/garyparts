@@ -117,11 +117,11 @@ body {
 main .index__main .main__section2 .desarrollos__banner, main .index__main .main__section3 .desarrollos__banner, main .desarrollos__banner, main .subStore__main .desarrollos__banner {
   width: 100vw;
   margin-bottom: 1%;
-  height: 2.5rem; }
+  height: 2.75rem; }
 
 main .index__main .main__section2 .desarrollos__banner .desarrollos__mainHeader, main .index__main .main__section3 .desarrollos__banner .desarrollos__mainHeader, main .desarrollos__banner .desarrollos__mainHeader, main .subStore__main .desarrollos__banner .desarrollos__mainHeader {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 100%;
   height: 100%;
   padding: 0.5rem;
@@ -495,32 +495,10 @@ main div form .form__fieldset {
 
 /*-------ESTILOS CLIENTES.HTML---------*/
 main .club__main {
+  height: max-content;
   display: flex;
   flex-direction: column;
   margin-bottom: 3%; }
-  main .club__main .desarrollos__banner {
-    margin-bottom: 1%;
-    width: 100vw;
-    display: flex;
-    height: 2.5rem;
-    background-image: url(../img/banner.png);
-    background-repeat: no-repeat;
-    grid-template-areas: "banner__img desarrollo__mainHeader"; }
-    main .club__main .desarrollos__banner .desarrollos__mainHeader {
-      background-color: #ed1c23cb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Nunito Sans", sans-serif;
-      color: #f8f8f8;
-      font-size: 1.2rem;
-      width: 100%;
-      height: 100%;
-      padding: 0.5rem;
-      background-repeat: no-repeat; }
-    main .club__main .desarrollos__banner .banner__img {
-      opacity: 15%;
-      width: 80%; }
   main .club__main .club__card {
     width: 100vw;
     height: 40rem;
@@ -533,14 +511,6 @@ main .club__main {
     background-size: cover;
     background-position: center;
     border: none; }
-    main .club__main .club__card .club__logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0.4rem; }
-      main .club__main .club__card .club__logo .club__cardImg {
-        height: 11vw;
-        opacity: 100%; }
     main .club__main .club__card .card__body {
       display: flex;
       flex-direction: column;
@@ -565,6 +535,46 @@ main .club__main {
         font-size: 1.25rem;
         text-align: center;
         color: #d7d7d7; }
+
+main .club__high .club__offer {
+  background-image: linear-gradient(0deg, white 0%, #e4e4e4 25%, #e0e0e0 50%, #e9e9e9 75%, white 100%); }
+  main .club__high .club__offer .high__title {
+    color: #0a0a0a;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: #ed1c23cb; }
+  main .club__high .club__offer .high__para {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center; }
+    main .club__high .club__offer .high__para .high__info {
+      color: #0a0a0a;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.25rem;
+      text-align: center;
+      display: inline;
+      text-align: center; }
+    main .club__high .club__offer .high__para .high__info2 {
+      color: #ed1c24;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.25rem;
+      text-align: center;
+      display: inline;
+      text-align: center;
+      font-weight: 500; }
+
+main .club__high .club__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  main .club__high .club__carousel .club__client {
+    width: 80vw; }
+    main .club__high .club__carousel .club__client .client__img {
+      width: 80vw; }
 
 /* Media Queries */
 /* BREAKING POINT Tablets*/
