@@ -211,6 +211,7 @@ main{
                 }
             }
 
+            
             .section3__images{
                 grid-area: is3_img;
                 display: flex;
@@ -578,23 +579,39 @@ main{
 
     .club__high{
         .club__offer{
-            background-image: $section-gradient;
+            background-color: #343232;
+            display: grid;
+            grid-template-areas: "header pic info";
+            grid-template-columns: 20vw 40vw 40vw;
+            grid-template-rows: auto;
 
-            .high__title{
-                color:rgb(10, 10, 10);
-                font-family: $font-main;
-                font-size: 1.5rem;
-                font-weight: 400;
-                text-align: center;
-                background-color: $banner-color;
-            }
-
+            .offer__title{
+                grid-area: header;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: rgb(188, 21, 21);
+                
+                .high__title{
+                    color:whitesmoke;
+                    font-family: $font-main;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-align: center;
+                    
+                }
+             }
             .high__para{
-                margin-left: 15vw;
-                margin-right: 15vw;
+                grid-area: info;
+                background-color: yellow;
+                width: 100%;
+                margin-top: 1rem;
                 text-align: center;
                 .high__info{
-                    color:rgb(10, 10, 10);
+                    
+                    color:whitesmoke;
                     font-family: $font-main;
                     font-size: 1.25rem;
                     text-align: center;
@@ -614,15 +631,24 @@ main{
         }
         
         .club__carousel{
+            grid-area: pic;
+            background-color: blue;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 2%;
-            margin-bottom: 2%;
+
             .club__client{
-                width: 80vw;
+                width: 28vw;
+                .carousel__textH{
+                    color: black;
+                }
+                .carousel__textP{
+                    color: black;
+                }
                 .client__img{
-                    width: 80vw;
+                    width: 28vw;
                 }
             }
         }

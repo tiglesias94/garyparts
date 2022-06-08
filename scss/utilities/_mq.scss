@@ -27,6 +27,19 @@
                 width: 100vw;
                 margin-top: 1%;
                 margin-bottom: 5%;
+
+                .section3__images{
+                    grid-area: is3_img;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(25, 25, 25);
+    
+                    .section3__pic{
+                        width: 80vw;
+                        }
+    
+                }
             }
         }
     }

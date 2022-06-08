@@ -537,20 +537,33 @@ main .club__main {
         color: #d7d7d7; }
 
 main .club__high .club__offer {
-  background-image: linear-gradient(0deg, white 0%, #e4e4e4 25%, #e0e0e0 50%, #e9e9e9 75%, white 100%); }
-  main .club__high .club__offer .high__title {
-    color: #0a0a0a;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    background-color: #ed1c23cb; }
+  background-color: #343232;
+  display: grid;
+  grid-template-areas: "header pic info";
+  grid-template-columns: 20vw 40vw 40vw;
+  grid-template-rows: auto; }
+  main .club__high .club__offer .offer__title {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #bc1515; }
+    main .club__high .club__offer .offer__title .high__title {
+      color: whitesmoke;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: center; }
   main .club__high .club__offer .high__para {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    grid-area: info;
+    background-color: yellow;
+    width: 100%;
+    margin-top: 1rem;
     text-align: center; }
     main .club__high .club__offer .high__para .high__info {
-      color: #0a0a0a;
+      color: whitesmoke;
       font-family: "Nunito Sans", sans-serif;
       font-size: 1.25rem;
       text-align: center;
@@ -566,15 +579,21 @@ main .club__high .club__offer {
       font-weight: 500; }
 
 main .club__high .club__carousel {
+  grid-area: pic;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+  align-items: center; }
   main .club__high .club__carousel .club__client {
-    width: 80vw; }
+    width: 28vw; }
+    main .club__high .club__carousel .club__client .carousel__textH {
+      color: black; }
+    main .club__high .club__carousel .club__client .carousel__textP {
+      color: black; }
     main .club__high .club__carousel .club__client .client__img {
-      width: 80vw; }
+      width: 28vw; }
 
 /* Media Queries */
 /* BREAKING POINT Tablets*/
@@ -596,7 +615,15 @@ main .club__high .club__carousel {
     flex-direction: column;
     width: 100vw;
     margin-top: 1%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+    main .index__main .main__section3 .section3__images {
+      grid-area: is3_img;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #191919; }
+      main .index__main .main__section3 .section3__images .section3__pic {
+        width: 80vw; } }
 
 /* BREAKING POINT Telefonos*/
 @media screen and (max-width: 480px) {
