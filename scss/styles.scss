@@ -579,11 +579,13 @@ main{
 
     .club__high{
         .club__offer{
-            background-color: #343232;
+            background-color: #121111;
             display: grid;
             grid-template-areas: "header pic info";
             grid-template-columns: 20vw 40vw 40vw;
             grid-template-rows: auto;
+            height: 25rem;
+            margin-bottom: 1%;
 
             .offer__title{
                 grid-area: header;
@@ -591,7 +593,7 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
+                width: 20vw;
                 background-color: rgb(188, 21, 21);
                 
                 .high__title{
@@ -605,34 +607,55 @@ main{
              }
             .high__para{
                 grid-area: info;
-                background-color: yellow;
                 width: 100%;
+                height: 100%;
                 margin-top: 1rem;
                 text-align: center;
-                .high__info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .high__paraText{
+                    width: 80%;
                     
-                    color:whitesmoke;
-                    font-family: $font-main;
-                    font-size: 1.25rem;
-                    text-align: center;
-                    display: inline;
-                    text-align: center;
+                    .high__info{
+                        color:whitesmoke;
+                        font-family: $font-main;
+                        font-size: 1.40rem;
+                        text-align: center;
+                        display: inline;
+                        text-align: center;
+
+                    }
+                    .high__info2{
+                        color:$main-color;
+                        font-family: $font-main;
+                        font-size: 1.25rem;
+                        text-align: center;
+                        display: inline;
+                        text-align: center;
+                        font-weight: 500;
+                    }
                 }
-                .high__info2{
-                    color:$main-color;
-                    font-family: $font-main;
-                    font-size: 1.25rem;
-                    text-align: center;
-                    display: inline;
-                    text-align: center;
-                    font-weight: 500;
+
+                .high__social{
+                    display: flex;
+                    width: 80%;
+                    justify-content: center;
+                    align-items: center;
+                .ig__banner{
+                    width: 2.5vw;
+                    margin-top: 2vw;
+                    margin-right: 2vw;
                 }
+            }
             }
         }
         
         .club__carousel{
             grid-area: pic;
-            background-color: blue;
+            background-color: #121111;
             width: 100%;
             height: 100%;
             display: flex;
@@ -640,16 +663,27 @@ main{
             align-items: center;
 
             .club__client{
-                width: 28vw;
+                display: flex;
+                max-height: 25rem;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2%;
+                margin-right: 2%;
+
                 .carousel__textH{
-                    color: black;
+                    color: whitesmoke;
+                    background-color: #1a1a1a4e;
                 }
                 .carousel__textP{
-                    color: black;
+                    color: whitesmoke;
+                    background-color: #1a1a1a4e;
                 }
                 .client__img{
-                    width: 28vw;
+                    max-height: 25rem;
+                    width: 100%;
                 }
+
             }
         }
     }
