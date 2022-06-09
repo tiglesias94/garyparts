@@ -43,6 +43,60 @@
             }
         }
     }
+    main{
+        .club__high{
+            .club__offer{
+                background-color: #121111;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                margin-bottom: 1%;
+                .offer__title{
+                    grid-area: header;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100vw;
+                    background-color: rgb(188, 21, 21);}
+                .high__para{
+                    .high__social{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        .ig__banner{
+                            width: 4vw;
+                            margin-top: 2vw;
+                            margin-right: 2vw;
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+
+    main{
+        
+        /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
+        .desarrollos__content{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+            .desarrollos__us{
+                width: 100vw;    
+            /*Estilos de texto en articulo de seccion desarrollos*/
+            }
+
+            .desarrollos_imageBlock{
+                width: 100vw;
+            }
+        }
+
+    }
 }
 
 /* BREAKING POINT Telefonos*/
@@ -80,6 +134,25 @@
             }
         }
     }
+
+    main{
+        .club__high{
+            .club__offer{
+                .high__para{
+                    .high__social{
+                        .ig__banner{
+                            width: 7vw;
+                            margin-top: 2vw;
+                            margin-right: 2vw;
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+
+
 
     footer{
         grid-area: footer;
