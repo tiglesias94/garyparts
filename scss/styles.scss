@@ -479,24 +479,42 @@ main{
 /*-------ESTILOS CONTACTO.HTML---------*/
 
 main{
-    div{
+    .fieldset__title{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: $main-color;
+        color: whitesmoke;
+        margin-top: 1rem;
+    }
+    .contact__form{
+        background-color: rgb(255,255,255);
+        background-image: $section-gradient;
+        height: max-content;
+        display: flex;
+        align-items: center;
         form{
+            display: flex;
+            width: 40vw;
             .form__fieldset{
-                margin-top: 1%;
-                .fieldset__title{
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-weight: bold;
-                    font-size: larger;
-                }
-                div{
+                margin-top: 1rem;
+                
+                .form__input{
+
                     .fieldset__label{
                         font-family: 'Nunito Sans', sans-serif;
-                        font-weight: bold;
+                        font-weight: 600;
+                        width: 6vw;
+                        margin-left: 2.5vw;
+                        text-align: left;
+                        font-size: 1.1rem;
+
                     }
                     .fieldset__placeholder{
-                        width: 35%;
+                        width: 30vw;
                         padding: 12px 20px;
-                        margin: 8px;
+                        margin: 0.2rem;
                         font-family: 'Nunito Sans', sans-serif;
                         text-align: left;
                         font-weight: bold;
@@ -504,8 +522,41 @@ main{
                         background-color: rgb(243, 243, 243);
                     }
                 }
-                div{
+
+                .form__inputC{
+                    .fieldset__label{
+                        font-family: 'Nunito Sans', sans-serif;
+                        font-weight: 600;
+                        width: 6vw;
+                        margin-left: 2.5vw;
+                        text-align: left;
+                        font-size: 1.1rem;                      
+
+                    }
+                    .fieldset__placeholder{
+                        width: 30vw;
+                        height: 15vw;
+                        padding: 12px 20px;
+                        margin: 0.2rem;
+                        font-family: 'Nunito Sans', sans-serif;
+                        text-align: left;
+                        font-weight: bold;
+                        border-bottom: 2px solid $main-color;
+                        background-color: rgb(243, 243, 243);
+                    }
+                }
+                .form__buttons{
+                    display: flex;
+                    width: 40vw;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    margin-left: 2.5vw;
+
                     .fieldset__button{
+                        background-color: $main-color;
+                        border-radius: 20%;
                         border: none;
                         color: white;
                         padding: 5px 10px;
@@ -515,6 +566,15 @@ main{
                     }
                 }
             }
+        }
+
+        .contact__maps{
+            width: 60vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
         }
     }
 }

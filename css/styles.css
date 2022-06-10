@@ -466,31 +466,83 @@ main {
       justify-self: center; }
 
 /*-------ESTILOS CONTACTO.HTML---------*/
-main div form .form__fieldset {
-  margin-top: 1%; }
-  main div form .form__fieldset .fieldset__title {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
-    font-size: larger; }
-  main div form .form__fieldset div .fieldset__label {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold; }
-  main div form .form__fieldset div .fieldset__placeholder {
-    width: 35%;
-    padding: 12px 20px;
-    margin: 8px;
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-    font-weight: bold;
-    border-bottom: 2px solid #ed1c24;
-    background-color: #f3f3f3; }
-  main div form .form__fieldset div .fieldset__button {
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold; }
+main .fieldset__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #ed1c24;
+  color: whitesmoke;
+  margin-top: 1rem; }
+
+main .contact__form {
+  background-color: white;
+  background-image: linear-gradient(0deg, white 0%, #e4e4e4 25%, #e0e0e0 50%, #e9e9e9 75%, white 100%);
+  height: max-content;
+  display: flex;
+  align-items: center; }
+  main .contact__form form {
+    display: flex;
+    width: 40vw; }
+    main .contact__form form .form__fieldset {
+      margin-top: 1rem; }
+      main .contact__form form .form__fieldset .form__input .fieldset__label {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        width: 6vw;
+        margin-left: 2.5vw;
+        text-align: left;
+        font-size: 1.1rem; }
+      main .contact__form form .form__fieldset .form__input .fieldset__placeholder {
+        width: 30vw;
+        padding: 12px 20px;
+        margin: 0.2rem;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #ed1c24;
+        background-color: #f3f3f3; }
+      main .contact__form form .form__fieldset .form__inputC .fieldset__label {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        width: 6vw;
+        margin-left: 2.5vw;
+        text-align: left;
+        font-size: 1.1rem; }
+      main .contact__form form .form__fieldset .form__inputC .fieldset__placeholder {
+        width: 30vw;
+        height: 15vw;
+        padding: 12px 20px;
+        margin: 0.2rem;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #ed1c24;
+        background-color: #f3f3f3; }
+      main .contact__form form .form__fieldset .form__buttons {
+        display: flex;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2.5vw; }
+        main .contact__form form .form__fieldset .form__buttons .fieldset__button {
+          background-color: #ed1c24;
+          border-radius: 20%;
+          border: none;
+          color: white;
+          padding: 5px 10px;
+          text-decoration: none;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: bold; }
+  main .contact__form .contact__maps {
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red; }
 
 /*-------ESTILOS CLIENTES.HTML---------*/
 main .club__main {
@@ -683,7 +735,69 @@ main .club__high .club__carousel {
         width: 100vw;
         /*Estilos de texto en articulo de seccion desarrollos*/ }
       main .desarrollos__content .desarrollos_imageBlock {
-        width: 100vw; } }
+        width: 100vw; }
+  main .fieldset__title {
+    width: 100vw; }
+  main .contact__form {
+    height: max-content;
+    display: flex; }
+    main .contact__form form {
+      display: flex;
+      width: 100vw; }
+      main .contact__form form .form__fieldset {
+        margin-top: 1rem; }
+        main .contact__form form .form__fieldset .form__input .fieldset__label {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 600;
+          width: 15vw;
+          margin-left: 2.5vw;
+          text-align: left;
+          font-size: 1.1rem; }
+        main .contact__form form .form__fieldset .form__input .fieldset__placeholder {
+          width: 70vw;
+          padding: 12px 20px;
+          margin: 0.2rem;
+          font-family: 'Nunito Sans', sans-serif;
+          text-align: left;
+          font-weight: bold;
+          border-bottom: 2px solid #ed1c24;
+          background-color: #f3f3f3; }
+        main .contact__form form .form__fieldset .form__inputC .fieldset__label {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 600;
+          width: 15vw;
+          margin-left: 2.5vw;
+          text-align: left;
+          font-size: 1.1rem; }
+        main .contact__form form .form__fieldset .form__inputC .fieldset__placeholder {
+          width: 70vw;
+          height: 15vw;
+          padding: 12px 20px;
+          margin: 0.2rem;
+          font-family: 'Nunito Sans', sans-serif;
+          text-align: left;
+          font-weight: bold;
+          border-bottom: 2px solid #ed1c24;
+          background-color: #f3f3f3; }
+        main .contact__form form .form__fieldset .form__buttons {
+          display: flex;
+          width: 97.5vw;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: 2.5vw; }
+          main .contact__form form .form__fieldset .form__buttons .fieldset__button {
+            background-color: #ed1c24;
+            border-radius: 20%;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold; }
+    main .contact__form .contact__maps {
+      display: none; } }
 
 /* BREAKING POINT Telefonos*/
 @media screen and (max-width: 480px) {
