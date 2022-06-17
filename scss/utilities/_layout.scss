@@ -61,27 +61,24 @@ body{
     footer{
         grid-area: footer;
         width: 100vw;
-        display: grid;
         background-color: rgba(0, 0, 0, 0.964);
-        height: max-content;
-        grid-template-areas: "content ."
-                            "cred cred";
-        grid-template-columns:70% 30%;
-        grid-template-rows: 85% 15%;
-        margin-top: auto;
+        height: 10rem;
+
 
         .footer__content{
             grid-area: content;
-            display: flex;
+            display: grid;
+            grid-template-areas: "icon info sn";
+            grid-template-columns: 15vw 25vw 60vw;
             width: 100vw;
             height: 100%;
             justify-content: flex-start;
             
             .footer__img{
-                grid-area: logo;
+                grid-area: icon;
                 display: flex;
                 align-content: center;
-                justify-content: flex-start;
+                justify-content: center;
                 margin-right: 2%;
 
                 /*Estilos de BLOQUE que contiene logo en footer*/
@@ -90,25 +87,33 @@ body{
 
                     /*Estilos de logo en footer*/
                     .logoContainer__image{
-                        width: 5.5rem;
+                        height: 8rem;
                         padding: 1%;       
                         }
                     }
             }
             /*Estilos de BLOQUE que contiene botones a redes sociales*/
             .footer_sn{
-                align-self: center;
-                justify-self: flex-start;
-
+                grid-area: sn;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                
+                .footer__snIcon{
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-right: 2.5rem;
                 .bottomButtons__icon{
-                    width: 2rem;
+                    width: 2.25rem;
                     height: auto;
-                    margin: 2%;
+                }
                 }
             }
 
             /*Estilos de BLOQUE que contiene info de contacto*/  
             .footer_info{
+                grid-area: info;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
@@ -125,7 +130,7 @@ body{
                         font-family: 'Nunito Sans';
                         list-style-type: none;
                         color: rgb(224, 224, 224);
-                        font-size: 0.85rem;
+                        font-size: 1rem;
                         font-weight:400;
                         text-align: justify;
                     }
@@ -135,17 +140,16 @@ body{
     
         /*Estilos de BLOQUE que contiene texto de derechos reservados*/
         .footer__rights{
-            grid-area: cred;
-            height: 100%;
-            background-color:#18181844;
+            height: 1.2rem;
+            background-color:#000000;
             display: flex;
             justify-content: center;
             
             /*Estilos de texto de derechos reservados*/
             .rights__text{
                 font-family: 'Nunito Sans';
-                color: rgba(143, 142, 142, 0.352);
-                font-size: 0.8rem;
+                color: whitesmoke;
+                font-size: 0.75rem;
                 text-align: center;
             }
         }

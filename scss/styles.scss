@@ -82,7 +82,7 @@ main{
                     .desarrollos__mainHeader{
                         @include banner-subLayout;
                         @extend %subBanner-style;
-                        background-color: map-get($map:$banner-pri , $key: bn-bgcol);
+                        background-color: map-get($map:$banner-pri , $key: bn-seccol);
                         color: map-get($map: $banner-pri , $key: bn-fontcol);
         
                     }
@@ -91,19 +91,7 @@ main{
                     }}
             
             /*ESTILOS bloque que contiene TITULO SECTION 2*/
-            .section2__words{
-                grid-area: is2_words;
-                display: flex;
-                flex-direction: column;
 
-                .section2__header{
-                    text-align: center;
-                    align-self: CENTER;
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.5rem;  
-                    font-weight:800;
-                }
-            }
             /*Estilos bloque que contiene cards de productos destacados*/
             .section2__high{
                 grid-area: is2_img;
@@ -128,7 +116,7 @@ main{
                         width: 100%;
                         text-align: center;    
                         font-family: 'Nunito Sans', sans-serif;
-                        font-size: 1.15rem;
+                        font-size: 1.2rem;
                         font-weight: bold;
                         height: 2rem;
                         display: flex;
@@ -140,7 +128,7 @@ main{
                     /*Estilos de BLOQUE que contiene imagen de producto*/
                     .index__cardImg{
                         width: 90%;
-                        max-height: 18rem;   
+                        max-height: 100%;   
                         padding: 5%;  
                         border-radius: 10%;
                         object-fit:cover;
@@ -160,6 +148,21 @@ main{
             }
         }
         
+        .desarrollos__banner{
+            @extend %bannerSize;
+            @include bannerLayout;
+                    
+            .desarrollos__mainHeader{
+                @include banner-subLayout;
+                @extend %subBanner-style;
+                background-color: map-get($map:$banner-pri , $key: bn-seccol);
+                color: map-get($map: $banner-pri , $key: bn-secfont);
+            }
+            
+            .banner__img{
+            @extend %banner-img;
+            }}
+
         /*ESTILOS SECTION 3*/
         .main__section3{
             display: grid;
@@ -170,25 +173,12 @@ main{
                                  "is3_specs is3_img";
             grid-template-columns: 40% 60%;
             grid-template-rows: 15% 15% 70%;
-            margin-top: 5%;
+            margin-top: 2%;
             margin-bottom: 5%;
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 15%, rgba(236,236,236,1) 50%, rgba(231,231,231,1) 85%, rgba(255,255,255,1) 100%); 
             
-            .desarrollos__banner{
-                @extend %bannerSize;
-                @include bannerLayout;
-                        
-                .desarrollos__mainHeader{
-                    @include banner-subLayout;
-                    @extend %subBanner-style;
-                    background-color: map-get($map:$banner-pri , $key: bn-seccol);
-                    color: map-get($map: $banner-pri , $key: bn-secfont);
-                }
-                
-                .banner__img{
-                @extend %banner-img;
-                }}
+
 
             /*Estilos de BLOQUE que contiene titulo y subtitulo de seccion*/
             .section3__words{
@@ -203,7 +193,7 @@ main{
             
                 .section3__subHeader{
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.4rem;  
+                    font-size: 1.5rem;  
                     font-weight: 600;
                     width: 100%;
                     text-align: center;
@@ -220,7 +210,7 @@ main{
                 background-color: rgb(25, 25, 25);
 
                 .section3__pic{
-                    width: 42vw;
+                    width: 40vw;
                     }
 
             }
@@ -250,7 +240,7 @@ main{
                     }
                     .section3__items{
                         list-style-type: none;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         color: $main-color;
                     }
                 }
@@ -266,7 +256,8 @@ main{
     .desarrollos__banner{
         @extend %bannerSize;
         @include bannerLayout;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
                 
         .desarrollos__mainHeader{
             @include banner-subLayout;
@@ -280,28 +271,17 @@ main{
         }}
 
     .store__main{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-
-        .store__title{
-            text-align: center;    
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 1.25rem;
-            background-color: #a5a5a515;
-            margin-top: 1rem;
-        }
-
+        height: 80vh;
+        
         .store__section{
             display: flex;
             flex-wrap: wrap;
-          background: rgb(255,255,255);
+            background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
             justify-content: space-evenly;
             align-items: center;
             height: 100%;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+
 
             /*Estilos de BLOQUE que contiene productos en tienda */
             .store__card{
@@ -317,7 +297,7 @@ main{
                     width: 100%;
                     text-align: center;    
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.15rem;
+                    font-size: 1.35rem;
                     font-weight: 800;
                     height: 2rem;
                     display: flex;
@@ -331,7 +311,7 @@ main{
                 }
                 /*Estilos de BLOQUE que contiene imagen de producto*/
                 .store__cardImg{
-                    width: 30rem; 
+                    width: 30vw; 
                     padding: 1%;  
                     border-radius: 10%;
                 }
@@ -341,9 +321,9 @@ main{
                     
                     .store__infoItem{
                         font-family: 'Nunito Sans', sans-serif;
-                        font-size: 1.1rem; 
+                        font-size: 1.3rem; 
                         list-style-type: none;   
-                        font-weight: bold;
+                        font-weight: 600;
                         text-align: center;
                         color: #464646;
                     }
