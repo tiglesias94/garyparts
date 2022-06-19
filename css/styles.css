@@ -117,12 +117,12 @@ body {
         font-size: 0.75rem;
         text-align: center; }
 
-main .index__main .main__section2 .desarrollos__banner, main .index__main .desarrollos__banner, main .desarrollos__banner, main .subStore__main .desarrollos__banner {
+main .index__main .main__section2 .desarrollos__banner, main .desarrollos__banner, main .subStore__main .desarrollos__banner {
   width: 100vw;
   margin-bottom: 1%;
   height: 2.75rem; }
 
-main .index__main .main__section2 .desarrollos__banner .desarrollos__mainHeader, main .index__main .desarrollos__banner .desarrollos__mainHeader, main .desarrollos__banner .desarrollos__mainHeader, main .subStore__main .desarrollos__banner .desarrollos__mainHeader {
+main .index__main .main__section2 .desarrollos__banner .desarrollos__mainHeader, main .desarrollos__banner .desarrollos__mainHeader, main .subStore__main .desarrollos__banner .desarrollos__mainHeader {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   width: 100%;
@@ -130,7 +130,7 @@ main .index__main .main__section2 .desarrollos__banner .desarrollos__mainHeader,
   padding: 0.5rem;
   background-repeat: no-repeat; }
 
-main .index__main .main__section2 .desarrollos__banner .banner__img, main .index__main .desarrollos__banner .banner__img, main .desarrollos__banner .banner__img, main .subStore__main .desarrollos__banner .banner__img {
+main .index__main .main__section2 .desarrollos__banner .banner__img, main .desarrollos__banner .banner__img, main .subStore__main .desarrollos__banner .banner__img {
   opacity: 15%;
   width: 80%; }
 
@@ -146,7 +146,7 @@ main .index__main {
     display: grid;
     grid-template-areas: "para .";
     grid-template-columns: 50% 50%;
-    background-image: url(../img/index__background.png);
+    background-image: url(../img/index__background.gif);
     background-repeat: no-repeat;
     background-position: top center;
     height: 70rem; }
@@ -208,7 +208,6 @@ main .index__main {
         align-items: center;
         width: 30rem;
         /*Estilos de titulo de producto*/
-        /*Estilos de BLOQUE que contiene imagen de producto*/
         /*Estilos para elementos LI en especificaciones de productos destacados*/ }
         main .index__main .main__section2 .section2__high .index__card .index__cardTitle {
           background-color: #b7b7b70e;
@@ -224,29 +223,23 @@ main .index__main {
           justify-content: center; }
         main .index__main .main__section2 .section2__high .index__card .index__cardTitle:hover {
           color: #ed1c24; }
-        main .index__main .main__section2 .section2__high .index__card .index__cardImg {
-          width: 90%;
-          max-height: 100%;
-          padding: 5%;
-          border-radius: 10%;
-          object-fit: cover; }
+        main .index__main .main__section2 .section2__high .index__card a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /*Estilos de BLOQUE que contiene imagen de producto*/ }
+          main .index__main .main__section2 .section2__high .index__card a .index__cardImg {
+            width: 90%;
+            max-height: 100%;
+            padding: 5%;
+            border-radius: 10%;
+            object-fit: cover; }
         main .index__main .main__section2 .section2__high .index__card .card__info .card__infoItem {
           font-family: 'Nunito Sans', sans-serif;
           font-size: 1.1rem;
           list-style-type: none;
           font-weight: bold;
           text-align: center; }
-  main .index__main .desarrollos__banner {
-    display: flex;
-    background-image: url(../img/banner.png);
-    background-repeat: no-repeat;
-    grid-template-areas: "banner__img desarrollo__mainHeader"; }
-    main .index__main .desarrollos__banner .desarrollos__mainHeader {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #161615cb;
-      color: #f8f8f8; }
   main .index__main .main__section3 {
     display: grid;
     height: fit-content;
@@ -279,7 +272,8 @@ main .index__main {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #191919; }
+      background-color: #191919;
+      width: 95%; }
       main .index__main .main__section3 .section3__images .section3__pic {
         width: 40vw; }
     main .index__main .main__section3 .section3__specs {
@@ -320,7 +314,7 @@ main .desarrollos__banner {
     color: #f8f8f8; }
 
 main .store__main {
-  height: 80vh; }
+  height: 100vh; }
   main .store__main .store__section {
     display: flex;
     flex-wrap: wrap;
@@ -353,7 +347,7 @@ main .store__main {
       main .store__main .store__section .store__card .store__cardTitle:hover {
         color: #ed1c24; }
       main .store__main .store__section .store__card .store__cardImg {
-        width: 30vw;
+        width: 33vw;
         padding: 1%;
         border-radius: 10%; }
       main .store__main .store__section .store__card .store__cardInfo .store__infoItem {
@@ -394,21 +388,21 @@ main .subStore__main {
       flex-direction: column;
       align-items: center;
       margin: 1%;
-      background-color: #aaa9a909;
+      background-color: #bfbfbf0a;
       border-radius: 5%;
+      border: 1px rgba(192, 192, 192, 0.116) solid;
       /*Estilos de titulo de producto*/ }
       main .subStore__main .subStore__section .subStore__card .subStore__cardTitle {
         margin-top: 3%;
         width: 100%;
         text-align: center;
         font-family: 'Nunito Sans', sans-serif;
-        font-size: 1.15rem;
-        font-weight: 800;
+        font-size: 1.2rem;
+        font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #f30000cb;
-        background-color: #46464605;
         height: 100%; }
       main .subStore__main .subStore__section .subStore__card .subStore__cardImg {
         width: 20rem;
@@ -419,8 +413,24 @@ main .subStore__main {
         width: 20rem;
         padding: 3%;
         border-radius: 15%; }
-      main .subStore__main .subStore__section .subStore__card .subStore__img:hover {
-        width: 21rem; }
+      main .subStore__main .subStore__section .subStore__card .subStore__link {
+        font-family: "Nunito Sans", sans-serif;
+        text-decoration: none;
+        color: #ed1c24;
+        width: 50%;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        height: 1.7rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid #ed1c24; }
+      main .subStore__main .subStore__section .subStore__card .subStore__link:hover {
+        background-color: #ed1c24;
+        color: whitesmoke;
+        height: 1.7rem;
+        border-radius: 0.5rem; }
 
 /*Estilos DESARROLLOS.HTML*/
 main {
@@ -440,7 +450,7 @@ main {
       main .desarrollos__content .desarrollos__us .desarrollos__paragraph {
         text-align: justify;
         font-family: 'Nunito Sans', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         margin-top: 2%;
         width: 90%; }
     main .desarrollos__content .desarrollos_imageBlock {
@@ -450,14 +460,19 @@ main {
       justify-self: center; }
 
 /*-------ESTILOS CONTACTO.HTML---------*/
-main .fieldset__title {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #ed1c24;
-  color: whitesmoke;
-  margin-top: 1rem; }
+main .desarrollos__banner {
+  display: flex;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  grid-template-areas: "banner__img desarrollo__mainHeader";
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+  main .desarrollos__banner .desarrollos__mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161615cb;
+    color: #f8f8f8; }
 
 main .contact__form {
   background-color: white;
@@ -657,7 +672,17 @@ main .club__high .club__carousel {
 
 /* Media Queries */
 /* BREAKING POINT Tablets*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1400px) {
+  main .store__main .store__section {
+    /*Estilos de BLOQUE que contiene productos en tienda */ }
+    main .store__main .store__section .store__card {
+      /*Estilos de BLOQUE que contiene imagen de producto*/ }
+      main .store__main .store__section .store__card .store__cardImg {
+        width: 30rem;
+        padding: 1%;
+        border-radius: 10%; } }
+
+@media screen and (max-width: 1400px) and (max-width: 1023px) {
   body {
     min-height: 100vh; }
   /* mq INDEX*/
@@ -782,8 +807,10 @@ main .club__high .club__carousel {
     main .contact__form .contact__maps {
       display: none; } }
 
-/* BREAKING POINT Telefonos*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1400px) {
+  /* BREAKING POINT Telefonos*/ }
+
+@media screen and (max-width: 1400px) and (max-width: 480px) {
   html {
     font-size: 75%; }
   header .logo .logo__img {

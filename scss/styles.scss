@@ -30,7 +30,7 @@ main{
                                 "para ."
                                 ;
             grid-template-columns: 50% 50%;
-            background-image: url(../img/index__background.png);
+            background-image: url(../img/index__background.gif);
             background-repeat: no-repeat;  
             background-position: top center;
             height: 70rem;
@@ -125,6 +125,11 @@ main{
                     }
                     .index__cardTitle:hover{
                     color: $main-color;}
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     /*Estilos de BLOQUE que contiene imagen de producto*/
                     .index__cardImg{
                         width: 90%;
@@ -132,6 +137,7 @@ main{
                         padding: 5%;  
                         border-radius: 10%;
                         object-fit:cover;
+                    }
                     }
                     /*Estilos para elementos LI en especificaciones de productos destacados*/
                     .card__info{
@@ -148,20 +154,7 @@ main{
             }
         }
         
-        .desarrollos__banner{
-            @extend %bannerSize;
-            @include bannerLayout;
-                    
-            .desarrollos__mainHeader{
-                @include banner-subLayout;
-                @extend %subBanner-style;
-                background-color: map-get($map:$banner-pri , $key: bn-seccol);
-                color: map-get($map: $banner-pri , $key: bn-secfont);
-            }
-            
-            .banner__img{
-            @extend %banner-img;
-            }}
+
 
         /*ESTILOS SECTION 3*/
         .main__section3{
@@ -208,6 +201,7 @@ main{
                 justify-content: center;
                 align-items: center;
                 background-color: rgb(25, 25, 25);
+                width: 95%;
 
                 .section3__pic{
                     width: 40vw;
@@ -271,7 +265,7 @@ main{
         }}
 
     .store__main{
-        height: 80vh;
+        height: 100vh;
         
         .store__section{
             display: flex;
@@ -311,7 +305,7 @@ main{
                 }
                 /*Estilos de BLOQUE que contiene imagen de producto*/
                 .store__cardImg{
-                    width: 30vw; 
+                    width:33vw; 
                     padding: 1%;  
                     border-radius: 10%;
                 }
@@ -374,8 +368,9 @@ main{
                 flex-direction: column;
                 align-items: center;
                 margin: 1%; 
-                background-color: #aaa9a909;
+                background-color: #bfbfbf0a;
                 border-radius: 5% ;
+                border: 1px rgba(192, 192, 192, 0.116) solid;
 
                 /*Estilos de titulo de producto*/
                 .subStore__cardTitle{
@@ -383,13 +378,12 @@ main{
                     width: 100%;
                     text-align: center;    
                     font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.15rem;
-                    font-weight: 800;
+                    font-size: 1.2rem;
+                    font-weight: 600;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     color: #f30000cb;
-                    background-color: #46464605;
                     height: 100%;
                 }
 
@@ -405,9 +399,27 @@ main{
                     padding: 3%;  
                     border-radius: 15%;
                 }
+                .subStore__link{
+                    font-family: $font-main;
+                    text-decoration: none;
+                    color: $main-color;
+                    width: 50%;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    text-align: center;
+                    height: 1.7rem;
+                    border-radius: 0.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: 0.5rem;
+                    border: 1px solid $main-color;
+                }
 
-                .subStore__img:hover{
-                    width: 21rem;
+                .subStore__link:hover{
+                    background-color: $main-color;
+                    color: whitesmoke;
+                    height: 1.7rem;
+                    border-radius: 0.5rem;
+
                 }
             }
         }
@@ -435,7 +447,7 @@ main{
             .desarrollos__paragraph{
                 text-align: justify;
                 font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.1rem;
+                font-size: 1.25rem;
                 margin-top: 2%;
                 width: 90%;
             }
@@ -459,15 +471,22 @@ main{
 /*-------ESTILOS CONTACTO.HTML---------*/
 
 main{
-    .fieldset__title{
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 600;
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: $main-color;
-        color: whitesmoke;
-        margin-top: 1rem;
-    }
+    .desarrollos__banner{
+        @extend %bannerSize;
+        @include bannerLayout;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+                
+        .desarrollos__mainHeader{
+            @include banner-subLayout;
+            @extend %subBanner-style;
+            background-color: map-get($map:$banner-pri , $key: bn-seccol);
+            color: map-get($map: $banner-pri , $key: bn-secfont);
+        }
+        
+        .banner__img{
+        @extend %banner-img;
+        }}
     .contact__form{
         background-color: rgb(255,255,255);
         background-image: $section-gradient;

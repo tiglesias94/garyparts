@@ -1,6 +1,20 @@
 /* Media Queries */
 /* BREAKING POINT Tablets*/
 
+@media screen and (max-width:1400px) {
+    main{
+        .store__main{
+            .store__section{
+                /*Estilos de BLOQUE que contiene productos en tienda */
+                .store__card{
+                    /*Estilos de BLOQUE que contiene imagen de producto*/
+                    .store__cardImg{
+                        width:30rem; 
+                        padding: 1%;  
+                        border-radius: 10%;
+                    }}}}
+}
+
 @media screen and (max-width:1023px) {
 
     body{
@@ -188,6 +202,7 @@
             }
         }
     }
+    
 }
 
 /* BREAKING POINT Telefonos*/
@@ -270,4 +285,5 @@
             align-items: center;
         }
     }
+}
 }
