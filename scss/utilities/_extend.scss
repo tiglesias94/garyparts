@@ -18,3 +18,23 @@
     opacity: 15%;
     width: 80%;
 }
+
+%linear-gradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
+}
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+%flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%flex-align-center{
+    justify-content: center;
+    align-items: center;
+}

@@ -1,12 +1,12 @@
 //ESTRUCTURA BASICA GRID + NAV & FOOTER
 
 body{
-    height: fit-content;
     display: grid;
     grid-template-areas:"header"
                         "main"
                         "footer";
     grid-auto-rows: auto;
+    min-height: 100vh;
     
     /*ESTILOS HEADER*/
     header{

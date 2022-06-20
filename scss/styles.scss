@@ -1,5 +1,5 @@
 /*Reset de estilos por defecto del navegador*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,138 +16,137 @@
 
 
 /*Estilos INDEX.HTML*/
-html{
+html {
     font-size: 13px;
 }
-main{
-    .index__main{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+
+main {
+    .index__main {
+        @extend %flex-column;
 
         /*Estilos BLOQUE que contiene seccion principal*/
-        .indexContent{
+        .indexContent {
             display: grid;
-            grid-template-areas: 
-                                "para ."
-                                ;
+            grid-template-areas:
+                "para ."
+            ;
             grid-template-columns: 50% 50%;
             background-image: url(../img/index__background.gif);
-            background-repeat: no-repeat;  
+            background-repeat: no-repeat;
             background-position: top center;
             height: 70rem;
 
-            .indexContent__article{
+            .indexContent__article {
                 grid-area: para;
                 align-self: center;
 
                 /*Estilos de parrafo en seccion principal*/
-                .article__words{
+                .article__words {
                     width: 100%;
                     padding: 0% 10% 0% 10%;
                     text-align: center;
-                    font-family: 'Nunito Sans', sans-serif;
+                    font-family: $font-main;
                     font-size: 1.5rem;
-                    color: rgb(252, 252, 252);      
-                    font-style: italic; 
-                    ;             
+                    color: rgb(252, 252, 252);
+                    font-style: italic;
+                    ;
                 }
 
                 /*Estilos de enlace en seccion principal*/
-                .enlaceMain{
+                .enlaceMain {
                     display: block;
                     text-decoration: none;
                     background-color: none;
-                    color: $main-color;     
-                    font-family: 'Nunito Sans', sans-serif;
+                    color: $main-color;
+                    font-family: $font-main;
                     font-size: 1.5rem;
                     text-align: center;
                     font-weight: 700;
                 }
             }
         }
-        
+
         /*ESTILOS SECTION 2*/
-        .main__section2{
+        .main__section2 {
             width: 100vw;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background: rgb(255,255,255);
-            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
+            @extend %flex-column;
+            @extend %linear-gradient;
             margin-top: 3%;
 
-                .desarrollos__banner{
-                    @extend %bannerSize;
-                    @include bannerLayout;
-                            
-                    .desarrollos__mainHeader{
-                        @include banner-subLayout;
-                        @extend %subBanner-style;
-                        background-color: map-get($map:$banner-pri , $key: bn-seccol);
-                        color: map-get($map: $banner-pri , $key: bn-fontcol);
-        
-                    }
-                    .banner__img{
+            .desarrollos__banner {
+                @extend %bannerSize;
+                @include bannerLayout;
+
+                .desarrollos__mainHeader {
+                    @include banner-subLayout;
+                    @extend %subBanner-style;
+                    background-color: map-get($map: $banner-pri , $key: bn-seccol);
+                    color: map-get($map: $banner-pri , $key: bn-fontcol);
+
+                }
+
+                .banner__img {
                     @extend %banner-img;
-                    }}
-            
+                }
+            }
+
             /*ESTILOS bloque que contiene TITULO SECTION 2*/
 
             /*Estilos bloque que contiene cards de productos destacados*/
-            .section2__high{
+            .section2__high {
                 grid-area: is2_img;
                 width: 100%;
-                display: flex;
-                flex-wrap: wrap;
+                @extend %flex;
                 justify-content: space-evenly;
                 padding-top: 1%;
 
                 /*Estilos de cards de productos destacados*/
-                .index__card{
-                    background-color: rgba(236, 236, 236, 0.11);
-                    display: flex;
-                    flex-direction: column;
+                .index__card {
+                    @extend %flex-column;
                     align-items: center;
                     width: 30rem;
-                    
+                    background-color: rgba(236, 236, 236, 0.11);
+
                     /*Estilos de titulo de producto*/
-                    .index__cardTitle{
-                        background-color: #b7b7b70e;
-                        margin-top: 3%;
+                    .index__cardTitle {
+                        @extend %flex;
+                        @extend %flex-align-center;
+                        height: 2rem;
                         width: 100%;
-                        text-align: center;    
-                        font-family: 'Nunito Sans', sans-serif;
+                        margin-top: 3%;
+                        text-align: center;
+                        font-family: $font-main;
                         font-size: 1.2rem;
                         font-weight: bold;
-                        height: 2rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .index__cardTitle:hover{
-                    color: $main-color;}
-
-                    a{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    /*Estilos de BLOQUE que contiene imagen de producto*/
-                    .index__cardImg{
-                        width: 90%;
-                        max-height: 100%;   
-                        padding: 5%;  
-                        border-radius: 10%;
-                        object-fit:cover;
-                    }
-                    }
-                    /*Estilos para elementos LI en especificaciones de productos destacados*/
-                    .card__info{
+                        background-color: #b7b7b70e;
                         
-                        .card__infoItem{
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-size: 1.1rem; 
-                            list-style-type: none;   
+                    }
+
+                    .index__cardTitle:hover {
+                        color: $main-color;
+                    }
+
+                    a {
+                        @extend %flex;
+                        @extend %flex-align-center;
+
+                        /*Estilos de BLOQUE que contiene imagen de producto*/
+                        .index__cardImg {
+                            width: 90%;
+                            max-height: 100%;
+                            padding: 5%;
+                            border-radius: 10%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    /*Estilos para elementos LI en especificaciones de productos destacados*/
+                    .card__info {
+
+                        .card__infoItem {
+                            font-family: $font-main;
+                            font-size: 1.1rem;
+                            list-style-type: none;
                             font-weight: bold;
                             text-align: center;
                         }
@@ -155,40 +154,36 @@ main{
                 }
             }
         }
-        
+
 
 
         /*ESTILOS SECTION 3*/
-        .main__section3{
+        .main__section3 {
             display: grid;
             height: fit-content;
             width: 100vw;
             grid-template-areas: "is3_banner is3_banner"
-                                "is3_words is3_img"
-                                 "is3_specs is3_img";
+                "is3_words is3_img"
+                "is3_specs is3_img";
             grid-template-columns: 40% 60%;
             grid-template-rows: 15% 15% 70%;
             margin-top: 2%;
             margin-bottom: 5%;
-            background: rgb(255,255,255);
-            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 15%, rgba(236,236,236,1) 50%, rgba(231,231,231,1) 85%, rgba(255,255,255,1) 100%); 
-            
+            @extend %linear-gradient;
 
 
             /*Estilos de BLOQUE que contiene titulo y subtitulo de seccion*/
-            .section3__words{
+            .section3__words {
                 grid-area: is3_words;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-column;
+                @extend %flex-align-center;
                 width: 100%;
 
-            /*Estilos de sub-titulo en seccion 3*/           
-            
-                .section3__subHeader{
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.5rem;  
+                /*Estilos de sub-titulo en seccion 3*/
+
+                .section3__subHeader {
+                    font-family: $font-main;
+                    font-size: 1.5rem;
                     font-weight: 600;
                     width: 100%;
                     text-align: center;
@@ -196,129 +191,125 @@ main{
                 }
             }
 
-            
-            .section3__images{
+
+            .section3__images {
                 grid-area: is3_img;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-align-center;
                 background-color: rgb(25, 25, 25);
                 width: 95%;
 
-                .section3__pic{
+                .section3__pic {
                     width: 40vw;
-                    }
+                }
 
             }
 
 
-            /*Estilos de BLOQUE que contiene info en seccion 3*/       
-            .section3__specs{
+            /*Estilos de BLOQUE que contiene info en seccion 3*/
+            .section3__specs {
                 grid-area: is3_specs;
-                font-family: 'Nunito Sans', sans-serif;
-                display: flex;
-                flex-direction: column;
+                font-family: $font-main;
+                @extend %flex-column;
                 justify-content: top;
 
-                /*Estilos de lista que contiene info en seccion 3*/    
-                .section3__list{
-                    display: flex;
-                    flex-direction: column;
+                /*Estilos de lista que contiene info en seccion 3*/
+                .section3__list {
+                    @extend %flex-column;
                     align-items: center;
 
-                    /*Estilos de elementos de lista que contiene info en seccion 3*/    
-                    .section3__itemsM{
+                    /*Estilos de elementos de lista que contiene info en seccion 3*/
+                    .section3__itemsM {
                         list-style-type: none;
-                        font-family: 'Nunito Sans', sans-serif;
+                        font-family: $font-main;
                         font-size: 1.2rem;
                         font-weight: 700;
-                        
+
                     }
-                    .section3__items{
+
+                    .section3__items {
                         list-style-type: none;
                         font-size: 1.2rem;
                         color: $main-color;
                     }
                 }
             }
-        }      
+        }
     }
 }
 
 /*Estilos TIENDA.HTML*/
 
-main{
+main {
 
-    .desarrollos__banner{
+    .desarrollos__banner {
         @extend %bannerSize;
         @include bannerLayout;
         margin-top: 1.5rem;
         margin-bottom: 0;
-                
-        .desarrollos__mainHeader{
+
+        .desarrollos__mainHeader {
             @include banner-subLayout;
             @extend %subBanner-style;
-            background-color: map-get($map:$banner-pri , $key: bn-seccol);
+            background-color: map-get($map: $banner-pri , $key: bn-seccol);
             color: map-get($map: $banner-pri , $key: bn-secfont);
         }
-        
-        .banner__img{
-        @extend %banner-img;
-        }}
 
-    .store__main{
+        .banner__img {
+            @extend %banner-img;
+        }
+    }
+
+    .store__main {
         height: 100vh;
-        
-        .store__section{
-            display: flex;
-            flex-wrap: wrap;
-            background: rgb(255,255,255);
-            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 25%, rgba(224,224,224,1) 50%, rgba(233,233,233,1) 75%, rgba(255,255,255,1) 100%);
+
+        .store__section {
+            @extend %flex;
+            @extend %linear-gradient;
             justify-content: space-evenly;
             align-items: center;
             height: 100%;
 
 
             /*Estilos de BLOQUE que contiene productos en tienda */
-            .store__card{
-                display: flex;
-                flex-direction: column;
+            .store__card {
+                @extend %flex-column;
                 align-items: center;
                 margin: 1%;
 
                 /*Estilos de titulo de producto*/
-                .store__cardTitle{
-                    background-color: #b7b7b709;
-                    margin-top: 3%;
+                .store__cardTitle {
+                    @extend %flex;
+                    @extend %flex-align-center;
+                    height: 2rem;
                     width: 100%;
-                    text-align: center;    
-                    font-family: 'Nunito Sans', sans-serif;
+                    margin-top: 3%;
+                    text-align: center;
+                    font-family: $font-main;
                     font-size: 1.35rem;
                     font-weight: 800;
-                    height: 2rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    background-color: #b7b7b709;
                     color: #464646;
                 }
 
-                .store__cardTitle:hover{
-                    color:$main-color;
+                .store__cardTitle:hover {
+                    color: $main-color;
                 }
+
                 /*Estilos de BLOQUE que contiene imagen de producto*/
-                .store__cardImg{
-                    width:33vw; 
-                    padding: 1%;  
+                .store__cardImg {
+                    width: 33vw;
+                    padding: 1%;
                     border-radius: 10%;
                 }
 
 
-                .store__cardInfo{
-                    
-                    .store__infoItem{
-                        font-family: 'Nunito Sans', sans-serif;
-                        font-size: 1.3rem; 
-                        list-style-type: none;   
+                .store__cardInfo {
+
+                    .store__infoItem {
+                        font-family: $font-main;
+                        font-size: 1.3rem;
+                        list-style-type: none;
                         font-weight: 600;
                         text-align: center;
                         color: #464646;
@@ -331,98 +322,87 @@ main{
 
 /*Estilos SUB-TIENDA.HTML*/
 
-main{
+main {
 
-    .subStore__main{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-  
-
-    .desarrollos__banner{
+    .desarrollos__banner {
         @extend %bannerSize;
         @include bannerLayout;
-        margin-top: 1rem;
-                
-        .desarrollos__mainHeader{
+        margin-top: 0.1rem;
+
+        .desarrollos__mainHeader {
             @include banner-subLayout;
             @extend %subBanner-style;
-            background-color: map-get($map:$banner-pri , $key: bn-seccol);
+            background-color: map-get($map: $banner-pri , $key: bn-seccol);
             color: map-get($map: $banner-pri , $key: bn-secfont);
         }
-        
-        .banner__img{
-        @extend %banner-img;
-        }}
-        
 
-        .subStore__section{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+        .banner__img {
+            @extend %banner-img;
+        }
+    }
+
+
+    .subStore__section {
+        min-height: 80vh;
+        @extend %flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .subStore__card {
+            @extend %flex-column;
             align-items: center;
-            height: 100%;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-        
-            .subStore__card{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 1%; 
-                background-color: #bfbfbf0a;
-                border-radius: 5% ;
-                border: 1px rgba(192, 192, 192, 0.116) solid;
+            margin: 1%;
+            background-color: #bfbfbf0a;
+            border-radius: 5%;
+            border: 1px rgba(192, 192, 192, 0.116) solid;
 
-                /*Estilos de titulo de producto*/
-                .subStore__cardTitle{
-                    margin-top: 3%;
-                    width: 100%;
-                    text-align: center;    
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #f30000cb;
-                    height: 100%;
-                }
+            /*Estilos de titulo de producto*/
+            .subStore__cardTitle {
+                @extend %flex;
+                @extend %flex-align-center;
+                height: 100%;
+                width: 100%;
+                margin-top: 3%;
+                text-align: center;
+                font-family: $font-main;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #f30000cb;
+            }
 
-                .subStore__cardImg{
-                    width: 20rem; 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+            .subStore__cardImg {
+                @extend %flex;
+                @extend %flex-align-center;
+                width: 25rem;
+            }
 
-                .subStore__img{
-                    width: 20rem;
-                    padding: 3%;  
-                    border-radius: 15%;
-                }
-                .subStore__link{
-                    font-family: $font-main;
-                    text-decoration: none;
-                    color: $main-color;
-                    width: 50%;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    text-align: center;
-                    height: 1.7rem;
-                    border-radius: 0.5rem;
-                    margin-bottom: 1rem;
-                    margin-top: 0.5rem;
-                    border: 1px solid $main-color;
-                }
+            .subStore__img {
+                width: 25rem;
+                padding: 3%;
+                border-radius: 15%;
+            }
 
-                .subStore__link:hover{
-                    background-color: $main-color;
-                    color: whitesmoke;
-                    height: 1.7rem;
-                    border-radius: 0.5rem;
+            .subStore__link {
+                font-family: $font-main;
+                text-decoration: none;
+                color: $main-color;
+                width: 50%;
+                font-size: 1rem;
+                font-weight: 600;
+                text-align: center;
+                height: 1.7rem;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+                border: 1px solid $main-color;
+            }
 
-                }
+            .subStore__link:hover {
+                background-color: $main-color;
+                color: whitesmoke;
+                height: 1.7rem;
+                border-radius: 0.5rem;
+
             }
         }
     }
@@ -430,89 +410,82 @@ main{
 
 /*Estilos DESARROLLOS.HTML*/
 
-main{
+main {
 
-        /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
-        .desarrollos__content{
-            width: 100vw;
-            height: 80vh;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
-            background-image: $section-gradient;
+    /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
+    .desarrollos__content {
+        @extend %flex;
+        @extend %flex-align-center;
+        width: 100vw;
+        min-height: 80vh;
+        margin-top: 1rem;
+        background-image: $section-gradient;
 
-
-            .desarrollos__us{
-                width: 50vw;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
+        .desarrollos__us {
+            width: 50vw;
+            @extend %flex-column;
+            @extend %flex-align-center;
 
             /*Estilos de texto en articulo de seccion desarrollos*/
-            .desarrollos__paragraph{
+            .desarrollos__paragraph {
                 text-align: justify;
-                font-family: 'Nunito Sans', sans-serif;
+                font-family: $font-main;
                 font-size: 1.35rem;
                 width: 90%;
             }
-            }
-            /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/
-            .desarrollos_imageBlock{
-                width: 50vw;
-                padding-right: 0.5rem;
-                padding-left: 0.5rem;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        }
 
-                .desarrollos__img{
-                }
-            }
-
+        /*Estilos de BLOQUE que contiene imagen de articulo en seccion desarrollos*/
+        .desarrollos_imageBlock {
+            @extend %flex;
+            @extend %flex-align-center;
+            width: 50vw;
+            height: 100%;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
         }
     }
+}
 
 
 /*-------ESTILOS CONTACTO.HTML---------*/
 
-main{
-    .desarrollos__banner{
+main {
+    .desarrollos__banner {
         @extend %bannerSize;
         @include bannerLayout;
         margin-top: 1.5rem;
         margin-bottom: 0;
-                
-        .desarrollos__mainHeader{
+
+        .desarrollos__mainHeader {
             @include banner-subLayout;
             @extend %subBanner-style;
-            background-color: map-get($map:$banner-pri , $key: bn-seccol);
+            background-color: map-get($map: $banner-pri , $key: bn-seccol);
             color: map-get($map: $banner-pri , $key: bn-secfont);
         }
-        
-        .banner__img{
-        @extend %banner-img;
-        }}
-    .contact__form{
-        background-color: rgb(255,255,255);
-        background-image: $section-gradient;
+
+        .banner__img {
+            @extend %banner-img;
+        }
+    }
+
+    .contact__form {
+        @extend %linear-gradient;
         height: max-content;
-        display: flex;
+        @extend %flex;
         align-items: center;
-        form{
+
+        form {
             display: flex;
             width: 40vw;
-            .form__fieldset{
-                margin-top: 1rem;
-                
-                .form__input{
 
-                    .fieldset__label{
-                        font-family: 'Nunito Sans', sans-serif;
+            .form__fieldset {
+                margin-top: 1rem;
+
+                .form__input {
+
+                    .fieldset__label {
+                        font-family: $font-main;
                         font-weight: 600;
                         width: 6vw;
                         margin-left: 2.5vw;
@@ -520,11 +493,12 @@ main{
                         font-size: 1.1rem;
 
                     }
-                    .fieldset__placeholder{
+
+                    .fieldset__placeholder {
                         width: 30vw;
                         padding: 12px 20px;
                         margin: 0.2rem;
-                        font-family: 'Nunito Sans', sans-serif;
+                        font-family: $font-main;
                         text-align: left;
                         font-weight: bold;
                         border-bottom: 2px solid $main-color;
@@ -532,99 +506,97 @@ main{
                     }
                 }
 
-                .form__inputC{
-                    .fieldset__label{
-                        font-family: 'Nunito Sans', sans-serif;
+                .form__inputC {
+                    .fieldset__label {
+                        font-family: $font-main;
                         font-weight: 600;
                         width: 6vw;
                         margin-left: 2.5vw;
                         text-align: left;
-                        font-size: 1.1rem;                      
+                        font-size: 1.1rem;
 
                     }
-                    .fieldset__placeholder{
+
+                    .fieldset__placeholder {
                         width: 30vw;
                         height: 15vw;
                         padding: 12px 20px;
                         margin: 0.2rem;
-                        font-family: 'Nunito Sans', sans-serif;
+                        font-family: $font-main;
                         text-align: left;
                         font-weight: bold;
                         border-bottom: 2px solid $main-color;
                         background-color: rgb(243, 243, 243);
                     }
                 }
-                .form__buttons{
-                    display: flex;
+
+                .form__buttons {
+                    @extend %flex;
                     width: 40vw;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %flex-align-center;
                     margin-top: 2rem;
                     margin-bottom: 2rem;
                     margin-left: 2.5vw;
 
-                    .fieldset__button{
+                    .fieldset__button {
                         background-color: $main-color;
                         border-radius: 20%;
                         border: none;
                         color: white;
                         padding: 5px 10px;
                         text-decoration: none;
-                        font-family: 'Nunito Sans', sans-serif;
+                        font-family: $font-main;
                         font-weight: bold;
                     }
                 }
             }
         }
 
-        .contact__maps{
+        .contact__maps {
+            @extend %flex;
+            @extend %flex-align-center;
             width: 60vw;
             height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 }
 
 /*-------ESTILOS CLIENTES.HTML---------*/
 
-main{
-    .club__main{
+main {
+    .club__main {
+        @extend %flex-column;
         height: max-content;
-        display: flex;
-        flex-direction: column;
         margin-bottom: 3%;
-        
-        .club__card{
+
+        .club__card {
+            @extend %flex-column;
             width: 100vw;
             height: 40rem;
             margin-top: 1rem;
             align-self: center;
-            display: flex;
-            flex-direction: column;
             background-image: url("https://i.ibb.co/nRPWPrp/meeting.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             border: none;
 
-           .card__body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #0e0e0ebe;
-                .card__bodyHeader{
+            .card__body {
+                @extend %flex-column;
+                @extend %flex-align-center;
+                background-color: #0e0e0ebe;
 
-                    .club__header1{
+                .card__bodyHeader {
+
+                    .club__header1 {
                         font-family: $font-main;
                         font-size: 3.5rem;
                         font-weight: 800;
                         display: inline;
                         color: $main-color;
                     }
-                    .club__header2{
+
+                    .club__header2 {
                         font-family: $font-main;
                         font-size: 3.25rem;
                         font-weight: 800;
@@ -632,20 +604,21 @@ main{
                         color: rgb(215, 215, 215);
                     }
                 }
-                    .card__text{
-                        font-family: $font-main;
-                        width: 70vw;
-                        font-size: 1.30rem;
-                        text-align: center;
-                        color: rgb(215, 215, 215);
 
-            }   
+                .card__text {
+                    font-family: $font-main;
+                    width: 70vw;
+                    font-size: 1.30rem;
+                    text-align: center;
+                    color: rgb(215, 215, 215);
+
+                }
             }
         }
     }
 
-    .club__high{
-        .club__offer{
+    .club__high {
+        .club__offer {
             background-color: #121111;
             display: grid;
             grid-template-areas: "header pic info";
@@ -654,40 +627,37 @@ main{
             height: 25rem;
             margin-bottom: 1%;
 
-            .offer__title{
+            .offer__title {
                 grid-area: header;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @extend %flex-column;
+                @extend %flex-align-center;
                 width: 20vw;
                 background-color: rgb(188, 21, 21);
-                
-                .high__title{
-                    color:whitesmoke;
+
+                .high__title {
+                    color: whitesmoke;
                     font-family: $font-main;
                     font-size: 1.6rem;
                     font-weight: 500;
                     text-align: center;
-                    
+
                 }
-             }
-            .high__para{
+            }
+
+            .high__para {
                 grid-area: info;
+                @extend %flex-column;
+                @extend %flex-align-center;         
                 width: 100%;
                 height: 100%;
                 margin-top: 1rem;
                 text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .high__paraText{
+                
+                .high__paraText {
                     width: 80%;
-                    
-                    .high__info{
-                        color:whitesmoke;
+
+                    .high__info {
+                        color: whitesmoke;
                         font-family: $font-main;
                         font-size: 1.30rem;
                         text-align: center;
@@ -695,8 +665,9 @@ main{
                         text-align: center;
 
                     }
-                    .high__info2{
-                        color:$main-color;
+
+                    .high__info2 {
+                        color: $main-color;
                         font-family: $font-main;
                         font-size: 1.30rem;
                         text-align: center;
@@ -706,12 +677,12 @@ main{
                     }
                 }
 
-                .high__social{
-                    display: flex;
+                .high__social {
+                    @extend %flex;
+                    @extend %flex-align-center;
                     width: 80%;
-                    justify-content: center;
-                    align-items: center;
-                    .ig__banner{
+
+                    .ig__banner {
                         width: 2vw;
                         margin-top: 2vw;
                         margin-right: 2vw;
@@ -719,34 +690,35 @@ main{
                 }
             }
         }
-        
-        .club__carousel{
+
+        .club__carousel {
             grid-area: pic;
-            background-color: #121111;
+            display: flex;
+            @extend %flex-align-center;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #121111;
 
-            .club__client{
-                display: flex;
+
+            .club__client {
+                @extend %flex;
+                @extend %flex-align-center;
                 max-height: 25rem;
                 width: 100%;
-                justify-content: center;
-                align-items: center;
                 margin-left: 2%;
                 margin-right: 2%;
 
-                .carousel__textH{
+                .carousel__textH {
                     color: whitesmoke;
                     background-color: #1a1a1a4e;
                 }
-                .carousel__textP{
+
+                .carousel__textP {
                     color: whitesmoke;
                     background-color: #1a1a1a4e;
                 }
-                .client__img{
+
+                .client__img {
                     max-height: 25rem;
                     width: 100%;
                 }
@@ -754,10 +726,6 @@ main{
             }
         }
     }
-        
-
-        
-    
 }
 
 @import "utilities/mq";

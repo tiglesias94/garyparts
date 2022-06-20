@@ -1,7 +1,7 @@
 /* Media Queries */
 /* BREAKING POINT Tablets*/
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1450px) {
     main{
         .store__main{
             .store__section{
@@ -9,13 +9,52 @@
                 .store__card{
                     /*Estilos de BLOQUE que contiene imagen de producto*/
                     .store__cardImg{
-                        width:30rem; 
+                        width:40rem; 
                         padding: 1%;  
                         border-radius: 10%;
                     }}}}
-}
+    }
 
-@media screen and (max-width:1400px) {
+    main{
+
+            .subStore__section{
+                justify-content: space-around;
+                margin-left: 15rem;
+                margin-right: 15rem;
+                }
+            }
+
+        main{
+    
+            /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
+            .desarrollos__content{
+                width: 100vw;
+                display: flex;
+                flex-wrap: wrap;
+    
+                .desarrollos__us{
+                    width: 100vw;    
+                /*Estilos de texto en articulo de seccion desarrollos*/
+                
+                .desarrollos__paragraph{
+                    text-align: center;
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-size: 1.35rem;
+                    width: 80%;
+                }}
+    
+                .desarrollos_imageBlock{
+                    width: 80vw;
+                    margin-bottom: 5rem;
+                    margin-top: 2rem;
+                }
+            }
+    
+        }
+        }
+
+
+@media screen and (max-width:992px) {
 
     body{
         min-height: 100vh;
@@ -93,25 +132,7 @@
         }
     }
 
-    main{
-        
-        /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
-        .desarrollos__content{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
 
-            .desarrollos__us{
-                width: 100vw;    
-            /*Estilos de texto en articulo de seccion desarrollos*/
-            }
-
-            .desarrollos_imageBlock{
-                width: 100vw;
-            }
-        }
-
-    }
 
 
     main{
@@ -203,6 +224,18 @@
             }
         }
     }
+
+    main{
+
+        .subStore__main{
+
+            .subStore__section{
+                margin-left: 0;
+                margin-right: 0;
+
+                }
+            }
+        }
     
 }
 
@@ -286,5 +319,4 @@
             align-items: center;
         }
     }
-}
 }
