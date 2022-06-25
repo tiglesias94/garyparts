@@ -25,29 +25,59 @@ body{
             align-self: center;
             margin-left: 2%;
 
-            .logo__img{
-                height: 3.5rem;
+            .logo__link{
+                outline: none;
+                box-shadow: none;
+                .logo__img{
+                    height: 3.5rem;
                 }
+            
+            .logo__link:focus{
+                outline: none;
+                box-shadow: none;
+            }
         }
+    }
 
         /*Estilos elementos de barra de navegacion*/  
         .navBarcss{ 
             justify-items: flex-end;  
             background-color: rgba(230, 230, 230, 0.171);
             
+            .hambIcon{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .hambIcon__style{
+                    border: none;
+                }
+
+                .hambIcon__style:focus{
+                    color: rgba(230, 230, 230, 0.171);
+                }
+
+                .hambIcon__style:hover{
+                    color: rgba(230, 230, 230, 0.171);
+                }
+            }
             /*Estilos enlaces*/  
-                .enlaces{
-                    text-decoration: none;
-                    color: black;     
-                    font-family: 'Nunito Sans'; 
-                    font-size: 1.2rem;
-                    font-weight: 500 ;
-                    text-align: right;
-                    }
-                    .enlaces:hover{
-                        color: #ed1c24;
-                    }
-                
+            .enlaces{
+                text-decoration: none;
+                color: black;     
+                font-family: 'Nunito Sans'; 
+                font-size: 1.2rem;
+                font-weight: 500 ;
+                text-align: right;
+                }
+                .enlaces:hover{
+                    color: #ed1c24;
+                    border: none;
+                }
+                .enlaces:focus{
+                    outline: none !important;
+                    box-shadow: none !important;
+                }        
             }
     }
 
@@ -69,9 +99,6 @@ body{
             display: grid;
             grid-template-areas: "icon info sn";
             grid-template-columns: 15vw 25vw 60vw;
-            width: 100vw;
-            height: 100%;
-            justify-content: flex-start;
             
             .footer__img{
                 grid-area: icon;
@@ -82,12 +109,12 @@ body{
 
                 /*Estilos de BLOQUE que contiene logo en footer*/
                 .footer__logoContainer{
-                    margin: 1rem;
+                    margin-left: 2rem;
+                    padding: 1rem;
 
                     /*Estilos de logo en footer*/
                     .logoContainer__image{
-                        height: 8rem;
-                        padding: 1%;       
+                        max-height: 8rem;     
                         }
                     }
             }
@@ -154,7 +181,4 @@ body{
         }
     }    
 }
-
-
-
 

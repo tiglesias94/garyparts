@@ -260,7 +260,7 @@ main {
     }
 
     .store__main {
-        height: 100vh;
+        height: fit-content;
 
         .store__section {
             @extend %flex;
@@ -427,7 +427,7 @@ main {
 
             /*Estilos de texto en articulo de seccion desarrollos*/
             .desarrollos__paragraph {
-                text-align: justify;
+                text-align: center;
                 font-family: $font-main;
                 font-size: 1.35rem;
                 width: 90%;
@@ -442,6 +442,7 @@ main {
             height: 100%;
             padding-right: 0.5rem;
             padding-left: 0.5rem;
+            z-index: 0;
         }
     }
 }
@@ -546,6 +547,7 @@ main {
                         text-decoration: none;
                         font-family: $font-main;
                         font-weight: bold;
+                        margin: 1rem;
                     }
                 }
             }
@@ -680,15 +682,20 @@ main {
                     @extend %flex;
                     @extend %flex-align-center;
                     width: 80%;
-
-                    .ig__banner {
-                        width: 2vw;
-                        margin-top: 2vw;
-                        margin-right: 2vw;
+                    a{
+                        .ig__banner {
+                            width: 2vw;
+                            margin-top: 2vw;
+                            margin-right: 2vw;
+                        }
+                    }
+                    a:focus{
+                        outline: none;
+                        box-shadow: none;
                     }
                 }
             }
-        }
+        }   
 
         .club__carousel {
             grid-area: pic;

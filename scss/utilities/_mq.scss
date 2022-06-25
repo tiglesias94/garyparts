@@ -286,37 +286,67 @@
                             margin-right: 2vw;
                         }
                     }
-            
                 }
             }
         }
     }
 
+    main{
+        .store__main{
+            .store__section{
+                /*Estilos de BLOQUE que contiene productos en tienda */
+                .store__card{
+                    /*Estilos de BLOQUE que contiene imagen de producto*/
+                    .store__cardImg{
+                        width:30rem; 
+                        padding: 1%;  
+                        border-radius: 10%;
+                    }}}}
+    }
 
+    body{
+        footer{
+            grid-area: footer;
 
-    footer{
-        grid-area: footer;
-        display: grid;
-        background-color: rgba(0, 0, 0, 0.964);
-        height: max-content;
-        grid-template-areas: "content"
-                            "cred";
-        grid-template-rows: 85% 15%;
-        grid-template-columns: 1fr;
-        margin-top: auto;
+            .footer__content{
+                grid-template-columns: 28vw 57vw 15vw;
+                
+                .footer__img{
+                    justify-content: center;
+                    margin-right: 0rem;
+    
+                    /*Estilos de BLOQUE que contiene logo en footer*/
+                    .footer__logoContainer{
+                        margin-left: 0rem;
+    
+                        /*Estilos de logo en footer*/
+                        .logoContainer__image{
+                            max-height: 6rem;     
+                        }
+                    }
+                }
 
-        .footer__content{
-            grid-area: content;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: flex-start;
-        }
+                /*Estilos de BLOQUE que contiene botones a redes sociales*/
+                .footer_sn{
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .footer__snIcon{
+                    margin-right: 0rem;
+                    }
+                }
+    
+                /*Estilos de BLOQUE que contiene info de contacto*/  
+                .footer_info{
+                    grid-area: info;
+    
+                    /*Estilos de BLOQUE que contiene lista en info de contacto*/
+                    .info__list{
+                        align-items: center;
+                    }
+                }   
+            }
 
-        .footer__rights{
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
+        }    
     }
 }
