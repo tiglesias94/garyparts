@@ -2,6 +2,8 @@
 /* BREAKING POINT Tablets*/
 
 @media screen and (max-width:1450px) {
+   
+   //MQ TIENDA
     main{
         .store__main{
             .store__section{
@@ -14,7 +16,7 @@
                         border-radius: 10%;
                     }}}}
     }
-
+    //MQ SUB-TIENDA
     main{
 
             .subStore__section{
@@ -24,6 +26,7 @@
                 }
             }
 
+    //MQ DESARROLLOS
         main{
     
             /*Estilos de BLOQUE que contiene texto e imagenes en seccion desarrollos*/
@@ -97,6 +100,9 @@
             }
         }
     }
+
+    //MQ CLIENTES
+
     main{
         .club__high{
             .club__offer{
@@ -133,94 +139,95 @@
     }
 
 
-
-
+//MQ CONTACTO
     main{
-
-        .fieldset__title{
-            width: 100vw;
-
-        }
-        .contact__form{
-            height: max-content;
-            display: flex;
-
-            form{
-                display: flex;
+        .contact__main{
+            .fieldset__title{
                 width: 100vw;
-                .form__fieldset{
-                    margin-top: 1rem;
-                    
-                    .form__input{
-    
-                        .fieldset__label{
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-weight: 600;
-                            width: 15vw;
+
+            }
+            .contact__form{
+                height: max-content;
+                display: flex;
+
+                form{
+                    display: flex;
+                    width: 100vw;
+                    .form__fieldset{
+                        margin-top: 1rem;
+                        
+                        .form__input{
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+                            .fieldset__label{
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 600;
+                                width: 15vw;
+                                margin-left: 2.5vw;
+                                text-align: left;
+                                font-size: 1.1rem;
+        
+                            }
+                            .fieldset__placeholder{
+                                width: 60vw;
+                                padding: 12px 1rem;
+                                margin-left: 2rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                text-align: left;
+                                font-weight: bold;
+                                border-bottom: 2px solid $main-color;
+                                background-color: rgb(243, 243, 243);
+                            }
+                        }
+        
+                        .form__inputC{
+                            .fieldset__label{
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: 600;
+                                width: 15vw;
+                                margin-left: 1rem;
+                                text-align: left;
+                                font-size: 1.1rem;                    
+        
+                            }
+                            .fieldset__placeholder{
+                                width: 60vw;
+                                height: 10rem;
+                                padding: 12px 1rem;
+                                margin-left: 3rem;
+                                font-family: 'Nunito Sans', sans-serif;
+                                text-align: left;
+                                font-weight: bold;
+                                border-bottom: 2px solid $main-color;
+                                background-color: rgb(243, 243, 243);
+                            }
+                        }
+                        .form__buttons{
+                            display: flex;
+                            width: 97.5vw;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 2rem;
+                            margin-bottom: 2rem;
                             margin-left: 2.5vw;
-                            text-align: left;
-                            font-size: 1.1rem;
-    
-                        }
-                        .fieldset__placeholder{
-                            width: 70vw;
-                            padding: 12px 20px;
-                            margin: 0.2rem;
-                            font-family: 'Nunito Sans', sans-serif;
-                            text-align: left;
-                            font-weight: bold;
-                            border-bottom: 2px solid $main-color;
-                            background-color: rgb(243, 243, 243);
-                        }
-                    }
-    
-                    .form__inputC{
-                        .fieldset__label{
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-weight: 600;
-                            width: 15vw;
-                            margin-left: 2.5vw;
-                            text-align: left;
-                            font-size: 1.1rem;                      
-    
-                        }
-                        .fieldset__placeholder{
-                            width: 70vw;
-                            height: 15vw;
-                            padding: 12px 20px;
-                            margin: 0.2rem;
-                            font-family: 'Nunito Sans', sans-serif;
-                            text-align: left;
-                            font-weight: bold;
-                            border-bottom: 2px solid $main-color;
-                            background-color: rgb(243, 243, 243);
-                        }
-                    }
-                    .form__buttons{
-                        display: flex;
-                        width: 97.5vw;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 2rem;
-                        margin-bottom: 2rem;
-                        margin-left: 2.5vw;
-    
-                        .fieldset__button{
-                            background-color: $main-color;
-                            border-radius: 20%;
-                            border: none;
-                            color: white;
-                            padding: 5px 10px;
-                            text-decoration: none;
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-weight: bold;
+        
+                            .fieldset__button{
+                                background-color: $main-color;
+                                border-radius: 20%;
+                                border: none;
+                                color: white;
+                                padding: 5px 10px;
+                                text-decoration: none;
+                                font-family: 'Nunito Sans', sans-serif;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }
-            }
-    
-            .contact__maps{
-                display: none;
+        
+                .contact__maps{
+                    display: none;
+                }
             }
         }
     }

@@ -468,96 +468,98 @@ main {
             @extend %banner-img;
         }
     }
+    .contact__main{
+        height: 100vh;
+        .contact__form {
+            @extend %linear-gradient;
+            height: 100vh;
+            @extend %flex;
+            align-items: center;
 
-    .contact__form {
-        @extend %linear-gradient;
-        height: max-content;
-        @extend %flex;
-        align-items: center;
+            form {
+                display: flex;
+                width: 40vw;
 
-        form {
-            display: flex;
-            width: 40vw;
+                .form__fieldset {
+                    margin-top: 1rem;
 
-            .form__fieldset {
-                margin-top: 1rem;
+                    .form__input {
 
-                .form__input {
+                        .fieldset__label {
+                            font-family: $font-main;
+                            font-weight: 600;
+                            width: 6vw;
+                            margin-left: 2.5vw;
+                            text-align: left;
+                            font-size: 1.1rem;
 
-                    .fieldset__label {
-                        font-family: $font-main;
-                        font-weight: 600;
-                        width: 6vw;
+                        }
+
+                        .fieldset__placeholder {
+                            width: 30vw;
+                            padding: 12px 20px;
+                            margin: 0.2rem;
+                            font-family: $font-main;
+                            text-align: left;
+                            font-weight: bold;
+                            border-bottom: 2px solid $main-color;
+                            background-color: rgb(243, 243, 243);
+                        }
+                    }
+
+                    .form__inputC {
+                        .fieldset__label {
+                            font-family: $font-main;
+                            font-weight: 600;
+                            width: 6vw;
+                            margin-left: 2.5vw;
+                            text-align: left;
+                            font-size: 1.1rem;
+
+                        }
+
+                        .fieldset__placeholder {
+                            width: 30vw;
+                            height: 15vw;
+                            padding: 12px 20px;
+                            margin: 0.2rem;
+                            font-family: $font-main;
+                            text-align: left;
+                            font-weight: bold;
+                            border-bottom: 2px solid $main-color;
+                            background-color: rgb(243, 243, 243);
+                        }
+                    }
+
+                    .form__buttons {
+                        @extend %flex;
+                        width: 40vw;
+                        @extend %flex-align-center;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
                         margin-left: 2.5vw;
-                        text-align: left;
-                        font-size: 1.1rem;
 
-                    }
-
-                    .fieldset__placeholder {
-                        width: 30vw;
-                        padding: 12px 20px;
-                        margin: 0.2rem;
-                        font-family: $font-main;
-                        text-align: left;
-                        font-weight: bold;
-                        border-bottom: 2px solid $main-color;
-                        background-color: rgb(243, 243, 243);
-                    }
-                }
-
-                .form__inputC {
-                    .fieldset__label {
-                        font-family: $font-main;
-                        font-weight: 600;
-                        width: 6vw;
-                        margin-left: 2.5vw;
-                        text-align: left;
-                        font-size: 1.1rem;
-
-                    }
-
-                    .fieldset__placeholder {
-                        width: 30vw;
-                        height: 15vw;
-                        padding: 12px 20px;
-                        margin: 0.2rem;
-                        font-family: $font-main;
-                        text-align: left;
-                        font-weight: bold;
-                        border-bottom: 2px solid $main-color;
-                        background-color: rgb(243, 243, 243);
-                    }
-                }
-
-                .form__buttons {
-                    @extend %flex;
-                    width: 40vw;
-                    @extend %flex-align-center;
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
-                    margin-left: 2.5vw;
-
-                    .fieldset__button {
-                        background-color: $main-color;
-                        border-radius: 20%;
-                        border: none;
-                        color: white;
-                        padding: 5px 10px;
-                        text-decoration: none;
-                        font-family: $font-main;
-                        font-weight: bold;
-                        margin: 1rem;
+                        .fieldset__button {
+                            background-color: $main-color;
+                            border-radius: 20%;
+                            border: none;
+                            color: white;
+                            padding: 5px 10px;
+                            text-decoration: none;
+                            font-family: $font-main;
+                            font-weight: bold;
+                            margin: 1rem;
+                        }
                     }
                 }
             }
-        }
 
-        .contact__maps {
-            @extend %flex;
-            @extend %flex-align-center;
-            width: 60vw;
-            height: 80vh;
+            .contact__maps {
+                @extend %flex;
+                @extend %flex-align-center;
+                width: 60vw;
+                height: 80vh;
+            }
         }
     }
 }
@@ -675,23 +677,6 @@ main {
                         display: inline;
                         text-align: center;
                         font-weight: 500;
-                    }
-                }
-
-                .high__social {
-                    @extend %flex;
-                    @extend %flex-align-center;
-                    width: 80%;
-                    a{
-                        .ig__banner {
-                            width: 2vw;
-                            margin-top: 2vw;
-                            margin-right: 2vw;
-                        }
-                    }
-                    a:focus{
-                        outline: none;
-                        box-shadow: none;
                     }
                 }
             }
